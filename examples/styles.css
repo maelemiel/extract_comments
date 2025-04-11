@@ -1,0 +1,75 @@
+/* Feuille de style d'exemple pour démontrer les annotations de commentaires */
+
+:root {
+  /* TODO: Standardiser la palette de couleurs @pierre P2 DUE:2023-12-10 */
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --error-color: #e74c3c;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* FIXME: Le fond ne s'étend pas sur toute la hauteur sur Safari @alice P1 */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* NOTE: Conserver cette marge pour la compatibilité mobile */
+  padding: 0 15px;
+}
+
+/* OPTIMIZE: Réduire la spécificité CSS @bob P3 DUE:2024-01-15 */
+.button.primary {
+  background-color: var(--primary-color);
+  color: white;
+  /* HACK: Contournement pour l'alignement vertical @pierre */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* BUG: Les styles d'animation provoquent des saccades sur Chrome P1 DUE:2023-11-05 */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* REVIEW: Évaluer si nous avons besoin de ces styles de grille @alice P2 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* QUESTION: Faut-il supporter IE11? @bob */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* IDEA: Implémenter un mode sombre @pierre P3 CREATED:2023-09-20 */
+@media (prefers-color-scheme: dark) {
+  /* TODO: Compléter les styles du mode sombre @alice P2 DUE:2023-12-20 */
+}
+
+/* TEMP: Styles temporaires pour le prototype, à revoir */
+.prototype-element {
+  border: 1px dashed #999;
+  padding: 10px;
+  margin-bottom: 10px;
+}
