@@ -1,0 +1,668 @@
+[
+  {
+    "type": "FIXME",
+    "text": "Implémenter la vérification de mot de passe",
+    "full_text": "Implémenter la vérification de mot de passe @alice P1 #42",
+    "file": "app.py",
+    "line": 16,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 1,
+    "due_date": null,
+    "issue": "42",
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "BUG",
+    "text": "Le message n'est pas encodé correctement pour les caractères spéciaux",
+    "full_text": "Le message n'est pas encodé correctement pour les caractères spéciaux P1 DUE:2023-11-15",
+    "file": "app.py",
+    "line": 22,
+    "assignees": [],
+    "priority": 1,
+    "due_date": "2023-11-15",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "FIXME",
+    "text": "Gérer les erreurs de réseau correctement",
+    "full_text": "Gérer les erreurs de réseau correctement @alice P1 #12 DUE:2023-10-30",
+    "file": "script.js",
+    "line": 13,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 1,
+    "due_date": "2023-10-30",
+    "issue": "12",
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "BUG",
+    "text": "L'erreur n'est pas correctement transmise à l'interface",
+    "full_text": "L'erreur n'est pas correctement transmise à l'interface P1",
+    "file": "script.js",
+    "line": 17,
+    "assignees": [],
+    "priority": 1,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "FIXME",
+    "text": "Le fond ne s'étend pas sur toute la hauteur sur Safari",
+    "full_text": "Le fond ne s'étend pas sur toute la hauteur sur Safari @alice P1",
+    "file": "styles.css",
+    "line": 14,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 1,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "BUG",
+    "text": "Les styles d'animation provoquent des saccades sur Chrome",
+    "full_text": "Les styles d'animation provoquent des saccades sur Chrome P1 DUE:2023-11-05",
+    "file": "styles.css",
+    "line": 42,
+    "assignees": [],
+    "priority": 1,
+    "due_date": "2023-11-05",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "FIXME",
+    "text": "Le logo ne s'affiche pas correctement sur mobile",
+    "full_text": "Le logo ne s'affiche pas correctement sur mobile @alice P1 #23 DUE:2023-10-28",
+    "file": "index.html",
+    "line": 14,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 1,
+    "due_date": "2023-10-28",
+    "issue": "23",
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "BUG",
+    "text": "Le bouton ne fonctionne pas sous Firefox",
+    "full_text": "Le bouton ne fonctionne pas sous Firefox P1 DUE:2023-11-02",
+    "file": "index.html",
+    "line": 31,
+    "assignees": [],
+    "priority": 1,
+    "due_date": "2023-11-02",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "TODO",
+    "text": "Ajouter validation d'email",
+    "full_text": "Ajouter validation d'email @pierre P2 DUE:2023-12-31",
+    "file": "app.py",
+    "line": 12,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 2,
+    "due_date": "2023-12-31",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "REVIEW",
+    "text": "Évaluer si nous devrions utiliser un template",
+    "full_text": "Évaluer si nous devrions utiliser un template @bob",
+    "file": "app.py",
+    "line": 20,
+    "assignees": [
+      "bob"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "TEMP",
+    "text": "Implémentation temporaire, sera remplacée par un service réel",
+    "full_text": "Implémentation temporaire, sera remplacée par un service réel",
+    "file": "app.py",
+    "line": 26,
+    "assignees": [],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "HACK",
+    "text": "Contournement temporaire pour la connexion à la base de données",
+    "full_text": "Contournement temporaire pour la connexion à la base de données @pierre",
+    "file": "app.py",
+    "line": 31,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "QUESTION",
+    "text": "Devrions-nous filtrer les valeurs nulles?",
+    "full_text": "Devrions-nous filtrer les valeurs nulles? @bob",
+    "file": "app.py",
+    "line": 43,
+    "assignees": [
+      "bob"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "TODO",
+    "text": "Implémenter l'endpoint API REST pour la création d'utilisateurs",
+    "full_text": "Implémenter l'endpoint API REST pour la création d'utilisateurs @pierre P2",
+    "file": "app.py",
+    "line": 48,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "IN PROGRESS",
+    "text": "Développement du système de rapports",
+    "full_text": "Développement du système de rapports @bob P2 DUE:2023-12-25",
+    "file": "app.py",
+    "line": 54,
+    "assignees": [
+      "bob"
+    ],
+    "priority": 2,
+    "due_date": "2023-12-25",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "TODO",
+    "text": "Convertir ce script en TypeScript",
+    "full_text": "Convertir ce script en TypeScript @pierre P2 DUE:2023-11-30",
+    "file": "script.js",
+    "line": 5,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 2,
+    "due_date": "2023-11-30",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "HACK",
+    "text": "Contourne le problème de rendu sur Safari",
+    "full_text": "Contourne le problème de rendu sur Safari @pierre",
+    "file": "script.js",
+    "line": 31,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "QUESTION",
+    "text": "Devrions-nous utiliser une bibliothèque de validation?",
+    "full_text": "Devrions-nous utiliser une bibliothèque de validation? @alice",
+    "file": "script.js",
+    "line": 41,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "REVIEW",
+    "text": "Cette logique de validation pourrait être simplifiée",
+    "full_text": "Cette logique de validation pourrait être simplifiée @bob P2 DUE:2023-12-05",
+    "file": "script.js",
+    "line": 43,
+    "assignees": [
+      "bob"
+    ],
+    "priority": 2,
+    "due_date": "2023-12-05",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "IN PROGRESS",
+    "text": "Refactorisation du système d'authentification",
+    "full_text": "Refactorisation du système d'authentification @alice P2 DUE:2023-11-15",
+    "file": "script.js",
+    "line": 52,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 2,
+    "due_date": "2023-11-15",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "TEMP",
+    "text": "À remplacer par l'intégration avec le système d'authentification",
+    "full_text": "À remplacer par l'intégration avec le système d'authentification",
+    "file": "script.js",
+    "line": 58,
+    "assignees": [],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "TODO",
+    "text": "Standardiser la palette de couleurs",
+    "full_text": "Standardiser la palette de couleurs @pierre P2 DUE:2023-12-10",
+    "file": "styles.css",
+    "line": 4,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 2,
+    "due_date": "2023-12-10",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "HACK",
+    "text": "Contournement pour l'alignement vertical",
+    "full_text": "Contournement pour l'alignement vertical @pierre",
+    "file": "styles.css",
+    "line": 32,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "REVIEW",
+    "text": "Évaluer si nous avons besoin de ces styles de grille",
+    "full_text": "Évaluer si nous avons besoin de ces styles de grille @alice P2",
+    "file": "styles.css",
+    "line": 52,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "QUESTION",
+    "text": "Faut-il supporter IE11?",
+    "full_text": "Faut-il supporter IE11? @bob",
+    "file": "styles.css",
+    "line": 59,
+    "assignees": [
+      "bob"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "TODO",
+    "text": "Compléter les styles du mode sombre",
+    "full_text": "Compléter les styles du mode sombre @alice P2 DUE:2023-12-20",
+    "file": "styles.css",
+    "line": 67,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 2,
+    "due_date": "2023-12-20",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "TEMP",
+    "text": "Styles temporaires pour le prototype, à revoir",
+    "full_text": "Styles temporaires pour le prototype, à revoir",
+    "file": "styles.css",
+    "line": 70,
+    "assignees": [],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "TODO",
+    "text": "Ajouter les méta-tags pour SEO",
+    "full_text": "Ajouter les méta-tags pour SEO @pierre P2 DUE:2023-11-25",
+    "file": "index.html",
+    "line": 8,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 2,
+    "due_date": "2023-11-25",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "REVIEW",
+    "text": "Vérifier que le texte est clair et concis",
+    "full_text": "Vérifier que le texte est clair et concis @bob P2",
+    "file": "index.html",
+    "line": 29,
+    "assignees": [
+      "bob"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "HACK",
+    "text": "Alignement temporaire jusqu'à refactorisation",
+    "full_text": "Alignement temporaire jusqu'à refactorisation @alice",
+    "file": "index.html",
+    "line": 43,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "QUESTION",
+    "text": "Devrions-nous ajouter des icônes pour chaque fonctionnalité?",
+    "full_text": "Devrions-nous ajouter des icônes pour chaque fonctionnalité? @bob",
+    "file": "index.html",
+    "line": 49,
+    "assignees": [
+      "bob"
+    ],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "IN PROGRESS",
+    "text": "Section de contact en cours de développement",
+    "full_text": "Section de contact en cours de développement @bob P2 DUE:2023-12-15",
+    "file": "index.html",
+    "line": 58,
+    "assignees": [
+      "bob"
+    ],
+    "priority": 2,
+    "due_date": "2023-12-15",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "TEMP",
+    "text": "Formulaire simplifié, à enrichir",
+    "full_text": "Formulaire simplifié, à enrichir",
+    "file": "index.html",
+    "line": 62,
+    "assignees": [],
+    "priority": 2,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "TODO",
+    "text": "Ajouter les liens de réseaux sociaux",
+    "full_text": "Ajouter les liens de réseaux sociaux @alice P2 DUE:2023-12-05",
+    "file": "index.html",
+    "line": 71,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 2,
+    "due_date": "2023-12-05",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "NOTE",
+    "text": "Le mot de passe est stocké dans les variables d'environnement",
+    "full_text": "Le mot de passe est stocké dans les variables d'environnement",
+    "file": "app.py",
+    "line": 35,
+    "assignees": [],
+    "priority": 3,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "OPTIMIZE",
+    "text": "Cette fonction est lente avec de grandes quantités de données",
+    "full_text": "Cette fonction est lente avec de grandes quantités de données @alice P3 DUE:2024-01-15",
+    "file": "app.py",
+    "line": 40,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 3,
+    "due_date": "2024-01-15",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "OPTIMIZE",
+    "text": "Réduire le nombre d'appels DOM",
+    "full_text": "Réduire le nombre d'appels DOM @bob P3",
+    "file": "script.js",
+    "line": 27,
+    "assignees": [
+      "bob"
+    ],
+    "priority": 3,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "NOTE",
+    "text": "Les gestionnaires d'événements devraient être déplacés dans un module séparé",
+    "full_text": "Les gestionnaires d'événements devraient être déplacés dans un module séparé",
+    "file": "script.js",
+    "line": 36,
+    "assignees": [],
+    "priority": 3,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "NOTE",
+    "text": "Conserver cette marge pour la compatibilité mobile",
+    "full_text": "Conserver cette marge pour la compatibilité mobile",
+    "file": "styles.css",
+    "line": 24,
+    "assignees": [],
+    "priority": 3,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "OPTIMIZE",
+    "text": "Réduire la spécificité CSS",
+    "full_text": "Réduire la spécificité CSS @bob P3 DUE:2024-01-15",
+    "file": "styles.css",
+    "line": 28,
+    "assignees": [
+      "bob"
+    ],
+    "priority": 3,
+    "due_date": "2024-01-15",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "NOTE",
+    "text": "La structure du menu sera révisée dans une prochaine itération",
+    "full_text": "La structure du menu sera révisée dans une prochaine itération",
+    "file": "index.html",
+    "line": 17,
+    "assignees": [],
+    "priority": 3,
+    "due_date": null,
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "OPTIMIZE",
+    "text": "Améliorer la structure des sections pour le SEO",
+    "full_text": "Améliorer la structure des sections pour le SEO @pierre P3 DUE:2024-01-10",
+    "file": "index.html",
+    "line": 35,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 3,
+    "due_date": "2024-01-10",
+    "issue": null,
+    "created": "Unknown",
+    "author": "Unknown"
+  },
+  {
+    "type": "IDEA",
+    "text": "Implémenter un système de thèmes pour l'interface",
+    "full_text": "Implémenter un système de thèmes pour l'interface @pierre P3 CREATED:2023-09-15",
+    "file": "script.js",
+    "line": 47,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 3,
+    "due_date": null,
+    "issue": null,
+    "created": "2023-09-15",
+    "author": "Unknown"
+  },
+  {
+    "type": "IDEA",
+    "text": "Implémenter un mode sombre",
+    "full_text": "Implémenter un mode sombre @pierre P3 CREATED:2023-09-20",
+    "file": "styles.css",
+    "line": 65,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 3,
+    "due_date": null,
+    "issue": null,
+    "created": "2023-09-20",
+    "author": "Unknown"
+  },
+  {
+    "type": "IDEA",
+    "text": "Ajouter une section témoignages",
+    "full_text": "Ajouter une section témoignages @pierre P3 CREATED:2023-09-25",
+    "file": "index.html",
+    "line": 56,
+    "assignees": [
+      "pierre"
+    ],
+    "priority": 3,
+    "due_date": null,
+    "issue": null,
+    "created": "2023-09-25",
+    "author": "Unknown"
+  },
+  {
+    "type": "IDEA",
+    "text": "Ajouter une fonctionnalité d'export PDF des rapports",
+    "full_text": "Ajouter une fonctionnalité d'export PDF des rapports @alice P3 CREATED:2023-10-01",
+    "file": "app.py",
+    "line": 52,
+    "assignees": [
+      "alice"
+    ],
+    "priority": 3,
+    "due_date": null,
+    "issue": null,
+    "created": "2023-10-01",
+    "author": "Unknown"
+  }
+]
