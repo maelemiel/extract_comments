@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- TODO: Ajouter les méta-tags pour SEO @pierre P2 DUE:2023-11-25 -->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Application Demo</h1>
+      <!-- FIXME: Le logo ne s'affiche pas correctement sur mobile @alice P1 #23 DUE:2023-10-28 -->
+      <img src="logo.png" alt="Logo" class="logo">
+      <nav>
+        <!-- NOTE: La structure du menu sera révisée dans une prochaine itération -->
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Bienvenue sur notre application</h2>
+        <!-- REVIEW: Vérifier que le texte est clair et concis @bob P2 -->
+        <p>Une description captivante et informative de notre application.</p>
+        <!-- BUG: Le bouton ne fonctionne pas sous Firefox P1 DUE:2023-11-02 -->
+        <button id="signup-button" class="button primary">S'inscrire</button>
+      </section>
+
+      <!-- OPTIMIZE: Améliorer la structure des sections pour le SEO @pierre P3 DUE:2024-01-10 -->
+      <section class="features">
+        <h2>Fonctionnalités</h2>
+        <div class="grid">
+          <div class="feature-card">
+            <h3>Fonctionnalité 1</h3>
+            <p>Description de la fonctionnalité 1.</p>
+          </div>
+          <!-- HACK: Alignement temporaire jusqu'à refactorisation @alice -->
+          <div class="feature-card" style="display: flex; flex-direction: column;">
+            <h3>Fonctionnalité 2</h3>
+            <p>Description de la fonctionnalité 2.</p>
+          </div>
+          <div class="feature-card">
+            <!-- QUESTION: Devrions-nous ajouter des icônes pour chaque fonctionnalité? @bob -->
+            <h3>Fonctionnalité 3</h3>
+            <p>Description de la fonctionnalité 3.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- IDEA: Ajouter une section témoignages @pierre P3 CREATED:2023-09-25 -->
+      
+      <!-- IN PROGRESS: Section de contact en cours de développement @bob P2 DUE:2023-12-15 -->
+      <section class="contact prototype-element">
+        <h2>Contactez-nous</h2>
+        <form>
+          <!-- TEMP: Formulaire simplifié, à enrichir -->
+          <input type="text" placeholder="Nom">
+          <input type="email" placeholder="Email">
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <!-- TODO: Ajouter les liens de réseaux sociaux @alice P2 DUE:2023-12-05 -->
+      <p>&copy; 2023 Application Demo. Tous droits réservés.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
