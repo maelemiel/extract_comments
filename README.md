@@ -1,6 +1,7 @@
 # 📋 Extract Comments
 
-Un outil puissant pour extraire, analyser et visualiser les annotations dans votre code source.
+A powerful tool to extract, analyze, and visualize annotations in your source code.
+
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Python](https://img.shields.io/badge/python-%3E%3D3.6-green)
@@ -8,54 +9,54 @@ Un outil puissant pour extraire, analyser et visualiser les annotations dans vot
 
 ## 📝 Description
 
-`extract_comments` est un outil de ligne de commande qui analyse votre base de code pour extraire tous les commentaires spéciaux (TODO, FIXME, BUG, etc.) et génère un rapport détaillé au format Markdown. Il vous aide à garder une trace de toutes vos tâches et problèmes directement à partir de votre code source.
+`extract_comments` is a command-line tool that scans your codebase to extract special comments (TODO, FIXME, BUG, etc.) and generates a detailed Markdown report. It helps you keep track of all your tasks and issues directly from your source code.
 
-![Exemple de rapport](https://via.placeholder.com/800x400?text=Exemple+de+rapport)
+![Example](https://via.placeholder.com/800x400?text=Exemple+de+rapport)
 
-## ✨ Fonctionnalités
+## ✨ Features
 
-- **Extraction intelligente** - Analyse les fichiers de code pour trouver les annotations importantes
-- **Métadonnées riches** - Support pour assignés, priorités, échéances et liens vers issues GitHub
-- **Visualisation élégante** - Génère des rapports Markdown avec graphiques visuels
-- **Plusieurs formats** - Rapports simplifiés, détaillés et données JSON pour intégration
-- **Hautement configurable** - Filtrage par extension, exclusion de répertoires
-- **Intégration Git** - Détection automatique des auteurs et dates de création
+- **Smart extraction** - Scans code files for important annotations
+- **Rich metadata** - Support for assignees, priorities, due dates, and GitHub issue links
+- **Beautiful visualization** - Generates Markdown reports with visual charts
+- **Multiple formats** - Simplified, detailed reports and JSON data for integration
+- **Highly configurable** - Filter by extension, exclude directories
+- **Git integration** - Automatically detects authors and creation dates
 
 ## 🚀 Installation
 
-Aucune dépendance externe n'est requise. Clonez simplement ce dépôt:
+No external dependencies required. Simply clone this repository:
 
 ```bash
-git clone https://github.com/username/extract_comments.git
+git clone https://github.com/maelemiel/extract_comments.git
 cd extract_comments
 chmod +x extract_comments.py
 ```
 
-## 📊 Types d'annotations supportés
+## 📊 Supported Annotation Types
 
-| Type | Emoji | Description | Priorité par défaut |
+| Type | Emoji | Description | Default Priority |
 |------|-------|-------------|---------------------|
-| TODO | ✅ | Tâches à accomplir | 2 |
-| FIXME | 🚨 | Problèmes critiques à résoudre | 1 |
-| BUG | 🐛 | Bugs connus | 1 |
-| HACK | ⚙️ | Solutions temporaires | 2 |
-| NOTE | 📝 | Notes importantes | 3 |
-| TEMP | 🕒 | Code temporaire | 2 |
-| IN PROGRESS | 🚧 | Travail en cours | 2 |
-| OPTIMIZE | ⚡ | Optimisations nécessaires | 3 |
-| REVIEW | 👀 | Code à revoir | 2 |
-| QUESTION | ❓ | Questions à clarifier | 2 |
-| IDEA | 💡 | Idées à explorer | 3 |
+| TODO | ✅ | Tasks to be done	 | 2 |
+| FIXME | 🚨 | Critical issues to fix	 | 1 |
+| BUG | 🐛 | Known bugs	 | 1 |
+| HACK | ⚙️ | Temporary solutions	 | 2 |
+| NOTE | 📝 | Important notes	 | 3 |
+| TEMP | 🕒 | Temporary code	 | 2 |
+| IN PROGRESS | 🚧 | Work in progress	 | 2 |
+| OPTIMIZE | ⚡ | Optimizations needed	 | 3 |
+| REVIEW | 👀 | Code to review	 | 2 |
+| QUESTION | ❓ | Questions to clarify	 | 2 |
+| IDEA | 💡 | Ideas to explore	 | 3 |
 
-## 🛠️ Utilisation
+## 🛠️ Usage
 
-### Commande de base
+### Basic Command
 
 ```bash
-./extract_comments.py --directory /chemin/vers/votre/projet
+./extract_comments.py --directory /path/to/your/project
 ```
 
-### Options disponibles
+### Available Options
 
 ```
 usage: extract_comments.py [-h] [--directory DIRECTORY] [--output OUTPUT] [--json-output JSON_OUTPUT]
@@ -81,94 +82,95 @@ options:
   --simple, -s          Generate a simplified, prettier report
 ```
 
-### Exemples
+### Examples
 
-#### Analyser un projet avec rapport simplifié:
+#### Scan a project with a simplified report:
 
 ```bash
 ./extract_comments.py -d /home/user/projects/myapp -s
 ```
 
-#### Spécifier des extensions de fichier particulières:
+#### Specify specific file extensions:
 
 ```bash
 ./extract_comments.py -d /home/user/projects/myapp -e .js .ts .py
 ```
 
-#### Exclure certains répertoires:
+#### Exclude certain directories:
 
 ```bash
 ./extract_comments.py -d /home/user/projects/myapp -x node_modules tests vendor
 ```
 
-#### Activer les liens GitHub:
+#### Enable GitHub links:
 
 ```bash
 ./extract_comments.py -d /home/user/projects/myapp -r https://github.com/username/myapp
 ```
 
-## 📌 Annotation de votre code
+## 📌 Annotating Your Code
 
-Pour que vos commentaires soient détectés, suivez ces conventions:
+To ensure your comments are detected, follow these conventions:
 
-### Syntaxe de base
+### Basic Syntax
 
 ```python
-# TODO: Implémenter la validation des formulaires
+# TODO: Implement form validation
 ```
 
 ```javascript
-// FIXME: Corriger le problème de chargement des images
+// FIXME: Fix image loading issue
 ```
 
 ```html
-<!-- NOTE: Ajouter une classe pour le responsive design -->
+<!-- NOTE: Add class for responsive design -->
 ```
 
-### Ajouter des métadonnées
+### Add Metadata
 
-Vous pouvez enrichir vos annotations avec des métadonnées:
+You can enrich your annotations with metadata:
 
 ```python
-# TODO: Optimiser l'algorithme de recherche @john P2 DUE:2023-12-31 #42
+# TODO: Optimize search algorithm @john P2 DUE:2023-12-31 #42
 ```
 
-#### Métadonnées supportées:
+#### Supported Metadata:
 
-- **Assigné**: `@username` - La personne responsable
-- **Priorité**: `P1`, `P2`, `P3`, `P4` (1 étant la plus haute)
-- **Date d'échéance**: `DUE:YYYY-MM-DD` - Date limite
-- **Issue GitHub**: `#123` - Référence à une issue
-- **Date de création**: `CREATED:YYYY-MM-DD` - Date de création manuelle
+- **Assignee**: `@username` - Person responsible
+- **Priority**: `P1`, `P2`, `P3`, `P4` (1 is highest)
+- **Due Date**: `DUE:YYYY-MM-DD` - Deadline
+- **GitHub Issue**: `#123` - Reference to an issue
+- **Created Date**: `CREATED:YYYY-MM-DD` - Manual creation date
 
-Si vous n'indiquez pas de priorité, une priorité par défaut sera assignée selon le type d'annotation.
+If no priority is set, a default priority is applied based on the annotation type.
 
-## 📂 Formats de sortie
+## 📂 Output Formats
 
-### Rapport simplifié (option `-s`)
+### Simplified Report (-s option)
 
-Un tableau de bord visuel montrant:
-- Résumé des annotations
-- Graphiques de priorités et types
-- Liste des tâches urgentes
-- Indicateurs visuels de progression
+A visual dashboard showing:
+- Annotation summary
+- Priority and type charts
+- Urgent task list
+- Visual progress indicators
 
-### Rapport détaillé
+### Detailed Report
 
-Une documentation complète avec:
-- Table des matières
-- Statistiques détaillées
-- Annotations groupées par type et priorité
-- Métadonnées complètes pour chaque annotation
+A full documentation including:
+- Table of contents
+- Detailed statistics
+- Annotations grouped by type and priority
+- Full metadata for each annotation
 
-### Données JSON
+### JSON Data
 
-Données structurées pour intégration avec d'autres outils:
+Structured data for integration with other tools:
+
 ```json
 [
   {
     "type": "TODO",
-    "text": "Implémenter la validation",
+    "text": "Implement validation",
     "file": "src/form.js",
     "line": 42,
     "assignees": ["john"],
@@ -181,13 +183,13 @@ Données structurées pour intégration avec d'autres outils:
 ]
 ```
 
-## 🔄 Intégration avec GitHub Actions
+## 🔄 GitHub Actions Integration
 
-Vous pouvez automatiser l'extraction des annotations de code en utilisant GitHub Actions. Un exemple de workflow est fourni dans ce dépôt.
+You can automate annotation extraction using GitHub Actions. An example workflow is included in this repository.
 
-### Configuration du workflow
+### Workflow Configuration
 
-Créez un fichier `.github/workflows/extract-comments.yml` dans votre dépôt:
+Create a file `.github/workflows/extract-comments.yml` in your repository:
 
 ```yaml
 name: Extract Code Annotations
@@ -197,10 +199,8 @@ on:
     branches: [ main, dev ]
   pull_request:
     branches: [ main, dev ]
-  # Exécute automatiquement tous les lundis à 9h00
   schedule:
-    - cron: '0 9 * * 1'
-  # Permet aussi de lancer manuellement
+    - cron: '0 9 * * 1' # Every Monday at 9 AM
   workflow_dispatch:
 
 jobs:
@@ -210,7 +210,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        fetch-depth: 0  # Nécessaire pour git blame
+        fetch-depth: 0  # Required for git blame
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -236,32 +236,32 @@ jobs:
         git push
 ```
 
-### Avantages de l'automatisation
+### Benefits of Automation
 
-- **Rapports toujours à jour**: Génération automatique après chaque push ou à intervalle régulier
-- **Documentation vivante**: Votre équipe a toujours accès aux dernières annotations
-- **Historique des tâches**: Suivez l'évolution des annotations au fil du temps
-- **Visibilité de l'équipe**: Intégrez facilement les rapports dans votre documentation de projet
+- **Always up-to-date reports**: Auto-generated after every push or on schedule
+- **Living documentation**: Team always has access to the latest annotations
+- **Task history**: Track annotation evolution over time
+- **Team visibility**: Easily integrate reports into your project docs
 
-### Personnalisation du workflow
+### Workflow Customization
 
 Vous pouvez personnaliser le workflow en modifiant:
 
-- **Déclencheurs**: Changez les branches surveillées ou la planification
-- **Répertoire de sortie**: Définissez où les rapports sont générés
-- **Options d'exclusion**: Adaptez les dossiers à ignorer
-- **Format de rapport**: Choisissez entre rapport simplifié ou détaillé
+- **Triggers**: Change monitored branches or schedule
+- **Output directory**: Define where reports are saved
+- **Exclusion options**: Adjust which folders are ignored
+- **Report format**: Choose between simplified or detailed
 
-Cette intégration est particulièrement utile pour les équipes qui utilisent activement les annotations comme moyen de communication et de suivi des tâches dans le code.
+This integration is especially useful for teams using annotations as a communication and task-tracking method within the code.
 
-## 🔧 Personnalisation
+## 🔧 Customization
 
-Pour personnaliser les types d'annotations et leurs priorités par défaut, modifiez la section `COMMENT_TYPES` au début du script.
+To customize annotation types and their default priorities, edit the `COMMENT_TYPES` section at the top of the script.
 
-## 🤝 Contribution
+## 🤝 Contributing
 
-Les contributions sont les bienvenues! N'hésitez pas à ouvrir une issue ou proposer une pull request.
+Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-## 📄 Licence
+## 📄 License
 
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+This project is licensed under the MIT License. See the LICENSE file for details.
