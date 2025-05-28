@@ -11,7 +11,7 @@ A powerful tool to extract, analyze, and visualize annotations in your source co
 
 `extract_comments` is a command-line tool that scans your codebase to extract special comments (TODO, FIXME, BUG, etc.) and generates a detailed Markdown report. It helps you keep track of all your tasks and issues directly from your source code.
 
-![Example](https://via.placeholder.com/800x400?text=Exemple+de+rapport)
+![Example](https://github.com/maelemiel/extract_comments/blob/main/examples/rapport.md)
 
 ## ✨ Features
 
