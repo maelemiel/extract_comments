@@ -1,8 +1,8 @@
 [
   {
     "type": "FIXME",
-    "text": "Implémenter la vérification de mot de passe",
-    "full_text": "Implémenter la vérification de mot de passe @alice P1 #42",
+    "text": "Implement password verification",
+    "full_text": "Implement password verification @alice P1 #42",
     "file": "app.py",
     "line": 16,
     "assignees": [
@@ -16,8 +16,8 @@
   },
   {
     "type": "BUG",
-    "text": "Le message n'est pas encodé correctement pour les caractères spéciaux",
-    "full_text": "Le message n'est pas encodé correctement pour les caractères spéciaux P1 DUE:2023-11-15",
+    "text": "The message is not properly encoded for special characters",
+    "full_text": "The message is not properly encoded for special characters P1 DUE:2023-11-15",
     "file": "app.py",
     "line": 22,
     "assignees": [],
@@ -29,8 +29,8 @@
   },
   {
     "type": "FIXME",
-    "text": "Gérer les erreurs de réseau correctement",
-    "full_text": "Gérer les erreurs de réseau correctement @alice P1 #12 DUE:2023-10-30",
+    "text": "Handle network errors properly",
+    "full_text": "Handle network errors properly @alice P1 #12 DUE:2023-10-30",
     "file": "script.js",
     "line": 13,
     "assignees": [
@@ -44,8 +44,8 @@
   },
   {
     "type": "BUG",
-    "text": "L'erreur n'est pas correctement transmise à l'interface",
-    "full_text": "L'erreur n'est pas correctement transmise à l'interface P1",
+    "text": "The error is not properly passed to the UI",
+    "full_text": "The error is not properly passed to the UI P1",
     "file": "script.js",
     "line": 17,
     "assignees": [],
@@ -57,8 +57,8 @@
   },
   {
     "type": "FIXME",
-    "text": "Le fond ne s'étend pas sur toute la hauteur sur Safari",
-    "full_text": "Le fond ne s'étend pas sur toute la hauteur sur Safari @alice P1",
+    "text": "Background does not stretch to full height on Safari",
+    "full_text": "Background does not stretch to full height on Safari @alice P1",
     "file": "styles.css",
     "line": 14,
     "assignees": [
@@ -72,8 +72,8 @@
   },
   {
     "type": "BUG",
-    "text": "Les styles d'animation provoquent des saccades sur Chrome",
-    "full_text": "Les styles d'animation provoquent des saccades sur Chrome P1 DUE:2023-11-05",
+    "text": "Animation styles cause stuttering on Chrome",
+    "full_text": "Animation styles cause stuttering on Chrome P1 DUE:2023-11-05",
     "file": "styles.css",
     "line": 42,
     "assignees": [],
@@ -85,8 +85,8 @@
   },
   {
     "type": "FIXME",
-    "text": "Le logo ne s'affiche pas correctement sur mobile",
-    "full_text": "Le logo ne s'affiche pas correctement sur mobile @alice P1 #23 DUE:2023-10-28",
+    "text": "The logo does not display correctly on mobile",
+    "full_text": "The logo does not display correctly on mobile @alice P1 #23 DUE:2023-10-28",
     "file": "index.html",
     "line": 14,
     "assignees": [
@@ -100,8 +100,8 @@
   },
   {
     "type": "BUG",
-    "text": "Le bouton ne fonctionne pas sous Firefox",
-    "full_text": "Le bouton ne fonctionne pas sous Firefox P1 DUE:2023-11-02",
+    "text": "The button does not work on Firefox",
+    "full_text": "The button does not work on Firefox P1 DUE:2023-11-02",
     "file": "index.html",
     "line": 31,
     "assignees": [],
@@ -113,8 +113,8 @@
   },
   {
     "type": "TODO",
-    "text": "Ajouter validation d'email",
-    "full_text": "Ajouter validation d'email @pierre P2 DUE:2023-12-31",
+    "text": "Add email validation",
+    "full_text": "Add email validation @pierre P2 DUE:2023-12-31",
     "file": "app.py",
     "line": 12,
     "assignees": [
@@ -128,8 +128,8 @@
   },
   {
     "type": "REVIEW",
-    "text": "Évaluer si nous devrions utiliser un template",
-    "full_text": "Évaluer si nous devrions utiliser un template @bob",
+    "text": "Evaluate if we should use a template",
+    "full_text": "Evaluate if we should use a template @bob",
     "file": "app.py",
     "line": 20,
     "assignees": [
@@ -143,8 +143,8 @@
   },
   {
     "type": "TEMP",
-    "text": "Implémentation temporaire, sera remplacée par un service réel",
-    "full_text": "Implémentation temporaire, sera remplacée par un service réel",
+    "text": "Temporary implementation, will be replaced by a real service",
+    "full_text": "Temporary implementation, will be replaced by a real service",
     "file": "app.py",
     "line": 26,
     "assignees": [],
@@ -156,8 +156,8 @@
   },
   {
     "type": "HACK",
-    "text": "Contournement temporaire pour la connexion à la base de données",
-    "full_text": "Contournement temporaire pour la connexion à la base de données @pierre",
+    "text": "Temporary workaround for database connection",
+    "full_text": "Temporary workaround for database connection @pierre",
     "file": "app.py",
     "line": 31,
     "assignees": [
@@ -171,8 +171,8 @@
   },
   {
     "type": "QUESTION",
-    "text": "Devrions-nous filtrer les valeurs nulles?",
-    "full_text": "Devrions-nous filtrer les valeurs nulles? @bob",
+    "text": "Should we filter out null values?",
+    "full_text": "Should we filter out null values? @bob",
     "file": "app.py",
     "line": 43,
     "assignees": [
@@ -186,8 +186,8 @@
   },
   {
     "type": "TODO",
-    "text": "Implémenter l'endpoint API REST pour la création d'utilisateurs",
-    "full_text": "Implémenter l'endpoint API REST pour la création d'utilisateurs @pierre P2",
+    "text": "Implement REST API endpoint for user creation",
+    "full_text": "Implement REST API endpoint for user creation @pierre P2",
     "file": "app.py",
     "line": 48,
     "assignees": [
@@ -201,8 +201,8 @@
   },
   {
     "type": "IN PROGRESS",
-    "text": "Développement du système de rapports",
-    "full_text": "Développement du système de rapports @bob P2 DUE:2023-12-25",
+    "text": "Developing the reporting system",
+    "full_text": "Developing the reporting system @bob P2 DUE:2023-12-25",
     "file": "app.py",
     "line": 54,
     "assignees": [
@@ -216,8 +216,8 @@
   },
   {
     "type": "TODO",
-    "text": "Convertir ce script en TypeScript",
-    "full_text": "Convertir ce script en TypeScript @pierre P2 DUE:2023-11-30",
+    "text": "Convert this script to TypeScript",
+    "full_text": "Convert this script to TypeScript @pierre P2 DUE:2023-11-30",
     "file": "script.js",
     "line": 5,
     "assignees": [
@@ -231,8 +231,8 @@
   },
   {
     "type": "HACK",
-    "text": "Contourne le problème de rendu sur Safari",
-    "full_text": "Contourne le problème de rendu sur Safari @pierre",
+    "text": "Workaround for rendering issue on Safari",
+    "full_text": "Workaround for rendering issue on Safari @pierre",
     "file": "script.js",
     "line": 31,
     "assignees": [
@@ -246,8 +246,8 @@
   },
   {
     "type": "QUESTION",
-    "text": "Devrions-nous utiliser une bibliothèque de validation?",
-    "full_text": "Devrions-nous utiliser une bibliothèque de validation? @alice",
+    "text": "Should we use a validation library?",
+    "full_text": "Should we use a validation library? @alice",
     "file": "script.js",
     "line": 41,
     "assignees": [
@@ -261,8 +261,8 @@
   },
   {
     "type": "REVIEW",
-    "text": "Cette logique de validation pourrait être simplifiée",
-    "full_text": "Cette logique de validation pourrait être simplifiée @bob P2 DUE:2023-12-05",
+    "text": "This validation logic could be simplified",
+    "full_text": "This validation logic could be simplified @bob P2 DUE:2023-12-05",
     "file": "script.js",
     "line": 43,
     "assignees": [
@@ -276,8 +276,8 @@
   },
   {
     "type": "IN PROGRESS",
-    "text": "Refactorisation du système d'authentification",
-    "full_text": "Refactorisation du système d'authentification @alice P2 DUE:2023-11-15",
+    "text": "Refactoring the authentication system",
+    "full_text": "Refactoring the authentication system @alice P2 DUE:2023-11-15",
     "file": "script.js",
     "line": 52,
     "assignees": [
@@ -291,8 +291,8 @@
   },
   {
     "type": "TEMP",
-    "text": "À remplacer par l'intégration avec le système d'authentification",
-    "full_text": "À remplacer par l'intégration avec le système d'authentification",
+    "text": "To be replaced by integration with the authentication system",
+    "full_text": "To be replaced by integration with the authentication system",
     "file": "script.js",
     "line": 58,
     "assignees": [],
@@ -304,8 +304,8 @@
   },
   {
     "type": "TODO",
-    "text": "Standardiser la palette de couleurs",
-    "full_text": "Standardiser la palette de couleurs @pierre P2 DUE:2023-12-10",
+    "text": "Standardize the color palette",
+    "full_text": "Standardize the color palette @pierre P2 DUE:2023-12-10",
     "file": "styles.css",
     "line": 4,
     "assignees": [
@@ -319,8 +319,8 @@
   },
   {
     "type": "HACK",
-    "text": "Contournement pour l'alignement vertical",
-    "full_text": "Contournement pour l'alignement vertical @pierre",
+    "text": "Workaround for vertical alignment",
+    "full_text": "Workaround for vertical alignment @pierre",
     "file": "styles.css",
     "line": 32,
     "assignees": [
@@ -334,8 +334,8 @@
   },
   {
     "type": "REVIEW",
-    "text": "Évaluer si nous avons besoin de ces styles de grille",
-    "full_text": "Évaluer si nous avons besoin de ces styles de grille @alice P2",
+    "text": "Evaluate if we need these grid styles",
+    "full_text": "Evaluate if we need these grid styles @alice P2",
     "file": "styles.css",
     "line": 52,
     "assignees": [
@@ -349,8 +349,8 @@
   },
   {
     "type": "QUESTION",
-    "text": "Faut-il supporter IE11?",
-    "full_text": "Faut-il supporter IE11? @bob",
+    "text": "Should we support IE11?",
+    "full_text": "Should we support IE11? @bob",
     "file": "styles.css",
     "line": 59,
     "assignees": [
@@ -364,8 +364,8 @@
   },
   {
     "type": "TODO",
-    "text": "Compléter les styles du mode sombre",
-    "full_text": "Compléter les styles du mode sombre @alice P2 DUE:2023-12-20",
+    "text": "Complete dark mode styles",
+    "full_text": "Complete dark mode styles @alice P2 DUE:2023-12-20",
     "file": "styles.css",
     "line": 67,
     "assignees": [
@@ -379,8 +379,8 @@
   },
   {
     "type": "TEMP",
-    "text": "Styles temporaires pour le prototype, à revoir",
-    "full_text": "Styles temporaires pour le prototype, à revoir",
+    "text": "Temporary styles for the prototype, to be reviewed",
+    "full_text": "Temporary styles for the prototype, to be reviewed",
     "file": "styles.css",
     "line": 70,
     "assignees": [],
@@ -392,8 +392,8 @@
   },
   {
     "type": "TODO",
-    "text": "Ajouter les méta-tags pour SEO",
-    "full_text": "Ajouter les méta-tags pour SEO @pierre P2 DUE:2023-11-25",
+    "text": "Add meta-tags for SEO",
+    "full_text": "Add meta-tags for SEO @pierre P2 DUE:2023-11-25",
     "file": "index.html",
     "line": 8,
     "assignees": [
@@ -407,8 +407,8 @@
   },
   {
     "type": "REVIEW",
-    "text": "Vérifier que le texte est clair et concis",
-    "full_text": "Vérifier que le texte est clair et concis @bob P2",
+    "text": "Check that the text is clear and concise",
+    "full_text": "Check that the text is clear and concise @bob P2",
     "file": "index.html",
     "line": 29,
     "assignees": [
@@ -422,8 +422,8 @@
   },
   {
     "type": "HACK",
-    "text": "Alignement temporaire jusqu'à refactorisation",
-    "full_text": "Alignement temporaire jusqu'à refactorisation @alice",
+    "text": "Temporary alignment until refactoring",
+    "full_text": "Temporary alignment until refactoring @alice",
     "file": "index.html",
     "line": 43,
     "assignees": [
@@ -437,8 +437,8 @@
   },
   {
     "type": "QUESTION",
-    "text": "Devrions-nous ajouter des icônes pour chaque fonctionnalité?",
-    "full_text": "Devrions-nous ajouter des icônes pour chaque fonctionnalité? @bob",
+    "text": "Should we add icons for each feature?",
+    "full_text": "Should we add icons for each feature? @bob",
     "file": "index.html",
     "line": 49,
     "assignees": [
@@ -452,8 +452,8 @@
   },
   {
     "type": "IN PROGRESS",
-    "text": "Section de contact en cours de développement",
-    "full_text": "Section de contact en cours de développement @bob P2 DUE:2023-12-15",
+    "text": "Contact section under development",
+    "full_text": "Contact section under development @bob P2 DUE:2023-12-15",
     "file": "index.html",
     "line": 58,
     "assignees": [
@@ -467,8 +467,8 @@
   },
   {
     "type": "TEMP",
-    "text": "Formulaire simplifié, à enrichir",
-    "full_text": "Formulaire simplifié, à enrichir",
+    "text": "Simplified form, to be enriched",
+    "full_text": "Simplified form, to be enriched",
     "file": "index.html",
     "line": 62,
     "assignees": [],
@@ -480,8 +480,8 @@
   },
   {
     "type": "TODO",
-    "text": "Ajouter les liens de réseaux sociaux",
-    "full_text": "Ajouter les liens de réseaux sociaux @alice P2 DUE:2023-12-05",
+    "text": "Add social media links",
+    "full_text": "Add social media links @alice P2 DUE:2023-12-05",
     "file": "index.html",
     "line": 71,
     "assignees": [
@@ -495,8 +495,8 @@
   },
   {
     "type": "NOTE",
-    "text": "Le mot de passe est stocké dans les variables d'environnement",
-    "full_text": "Le mot de passe est stocké dans les variables d'environnement",
+    "text": "The password is stored in environment variables",
+    "full_text": "The password is stored in environment variables",
     "file": "app.py",
     "line": 35,
     "assignees": [],
@@ -508,8 +508,8 @@
   },
   {
     "type": "OPTIMIZE",
-    "text": "Cette fonction est lente avec de grandes quantités de données",
-    "full_text": "Cette fonction est lente avec de grandes quantités de données @alice P3 DUE:2024-01-15",
+    "text": "This function is slow with large amounts of data",
+    "full_text": "This function is slow with large amounts of data @alice P3 DUE:2024-01-15",
     "file": "app.py",
     "line": 40,
     "assignees": [
@@ -523,8 +523,8 @@
   },
   {
     "type": "OPTIMIZE",
-    "text": "Réduire le nombre d'appels DOM",
-    "full_text": "Réduire le nombre d'appels DOM @bob P3",
+    "text": "Reduce the number of DOM calls",
+    "full_text": "Reduce the number of DOM calls @bob P3",
     "file": "script.js",
     "line": 27,
     "assignees": [
@@ -538,8 +538,8 @@
   },
   {
     "type": "NOTE",
-    "text": "Les gestionnaires d'événements devraient être déplacés dans un module séparé",
-    "full_text": "Les gestionnaires d'événements devraient être déplacés dans un module séparé",
+    "text": "Event handlers should be moved to a separate module",
+    "full_text": "Event handlers should be moved to a separate module",
     "file": "script.js",
     "line": 36,
     "assignees": [],
@@ -551,8 +551,8 @@
   },
   {
     "type": "NOTE",
-    "text": "Conserver cette marge pour la compatibilité mobile",
-    "full_text": "Conserver cette marge pour la compatibilité mobile",
+    "text": "Keep this margin for mobile compatibility",
+    "full_text": "Keep this margin for mobile compatibility",
     "file": "styles.css",
     "line": 24,
     "assignees": [],
@@ -564,8 +564,8 @@
   },
   {
     "type": "OPTIMIZE",
-    "text": "Réduire la spécificité CSS",
-    "full_text": "Réduire la spécificité CSS @bob P3 DUE:2024-01-15",
+    "text": "Reduce CSS specificity",
+    "full_text": "Reduce CSS specificity @bob P3 DUE:2024-01-15",
     "file": "styles.css",
     "line": 28,
     "assignees": [
@@ -579,8 +579,8 @@
   },
   {
     "type": "NOTE",
-    "text": "La structure du menu sera révisée dans une prochaine itération",
-    "full_text": "La structure du menu sera révisée dans une prochaine itération",
+    "text": "The menu structure will be revised in a future iteration",
+    "full_text": "The menu structure will be revised in a future iteration",
     "file": "index.html",
     "line": 17,
     "assignees": [],
@@ -592,8 +592,8 @@
   },
   {
     "type": "OPTIMIZE",
-    "text": "Améliorer la structure des sections pour le SEO",
-    "full_text": "Améliorer la structure des sections pour le SEO @pierre P3 DUE:2024-01-10",
+    "text": "Improve section structure for SEO",
+    "full_text": "Improve section structure for SEO @pierre P3 DUE:2024-01-10",
     "file": "index.html",
     "line": 35,
     "assignees": [
@@ -607,8 +607,8 @@
   },
   {
     "type": "IDEA",
-    "text": "Implémenter un système de thèmes pour l'interface",
-    "full_text": "Implémenter un système de thèmes pour l'interface @pierre P3 CREATED:2023-09-15",
+    "text": "Implement a theme system for the interface",
+    "full_text": "Implement a theme system for the interface @pierre P3 CREATED:2023-09-15",
     "file": "script.js",
     "line": 47,
     "assignees": [
@@ -622,8 +622,8 @@
   },
   {
     "type": "IDEA",
-    "text": "Implémenter un mode sombre",
-    "full_text": "Implémenter un mode sombre @pierre P3 CREATED:2023-09-20",
+    "text": "Implement a dark mode",
+    "full_text": "Implement a dark mode @pierre P3 CREATED:2023-09-20",
     "file": "styles.css",
     "line": 65,
     "assignees": [
@@ -637,8 +637,8 @@
   },
   {
     "type": "IDEA",
-    "text": "Ajouter une section témoignages",
-    "full_text": "Ajouter une section témoignages @pierre P3 CREATED:2023-09-25",
+    "text": "Add a testimonials section",
+    "full_text": "Add a testimonials section @pierre P3 CREATED:2023-09-25",
     "file": "index.html",
     "line": 56,
     "assignees": [
@@ -652,8 +652,8 @@
   },
   {
     "type": "IDEA",
-    "text": "Ajouter une fonctionnalité d'export PDF des rapports",
-    "full_text": "Ajouter une fonctionnalité d'export PDF des rapports @alice P3 CREATED:2023-10-01",
+    "text": "Add PDF export feature for reports",
+    "full_text": "Add PDF export feature for reports @alice P3 CREATED:2023-10-01",
     "file": "app.py",
     "line": 52,
     "assignees": [

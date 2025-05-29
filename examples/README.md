@@ -1,15 +1,15 @@
-# Exemple d'utilisation d'Extract Comments
+# Example usage of Extract Comments
 
-Ce dossier contient un exemple de projet pour démontrer les fonctionnalités d'`extract_comments.py`.
+This folder contains a sample project to demonstrate the features of `extract_comments.py`.
 
-## Structure du projet
+## Project structure
 
-- `app.py` : Application Python fictive
-- `script.js` : JavaScript avec diverses annotations
-- `styles.css` : Fichier CSS pour le style
-- `index.html` : Page HTML simple
+- `app.py`: Sample Python application
+- `script.js`: JavaScript file with various annotations
+- `styles.css`: CSS file for styling
+- `index.html`: Simple HTML page
 
-## Types d'annotations présents
+## Annotation types present
 
 - TODO
 - FIXME
@@ -21,31 +21,31 @@ Ce dossier contient un exemple de projet pour démontrer les fonctionnalités d'
 - QUESTION
 - IDEA
 
-## Comment exécuter l'extraction sur cet exemple
+## How to run extraction on this example
 
-Pour analyser uniquement ce répertoire d'exemples, exécutez la commande:
+To analyze only this example directory, run the following command:
 
 ```bash
 cd ..
 python3 extract_comments.py --directory ./examples --output ./examples/rapport.md --json-output ./examples/rapport.json --simple
 ```
 
-Ou
+Or
 
 ```bash
 chmod +x extract_comments.py
 ./extract_comments.py --directory ./examples --output ./examples/rapport.md --json-output ./examples/rapport.json --simple
 ```
 
-Ou
+Or
 
 ```bash
 chmod +x run_example.sh
 ./run_example.sh
 ```
 
-Cela générera:
+This will generate:
 
-- `./examples/rapport.md` - Rapport simplifié
-- `./examples/rapport_detailed.md` - Rapport détaillé
-- `./examples/rapport.json` - Données au format JSON
+- `./examples/rapport.md` - Simplified report
+- `./examples/rapport_detailed.md` - Detailed report
+- `./examples/rapport.json` - Data in JSON format

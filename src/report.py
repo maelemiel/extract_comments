@@ -9,18 +9,18 @@ from .utils import (
 
 def write_report_header(file, current_date):
     """Write report header section."""
-    file.write("# 📋 Rapport d'annotations\n\n")
-    file.write(f"*Généré le {current_date}*\n\n")
+    file.write("# 📋 Annotations Report\n\n")
+    file.write(f"*Generated on {current_date}*\n\n")
 
 def write_priority_section(file, priority_counts, total, max_count):
     """Write the priority section with visual bars."""
-    file.write("### ⚡ Priorités\n\n")
+    file.write("### ⚡ Priorities\n\n")
 
     priority_labels = {
-        1: "🔴 Critique ",
-        2: "🟠 Élevée  ",
-        3: "🟡 Moyenne ",
-        4: "🟢 Basse   "
+        1: "🔴 Critical ",
+        2: "🟠 High  ",
+        3: "🟡 Medium ",
+        4: "🟢 Low   "
     }
 
     for priority, count in sorted(priority_counts.items()):
@@ -53,7 +53,7 @@ def write_urgent_comments_section(file, urgent_comments, repo_root):
     if not urgent_comments:
         return
 
-    file.write("## ⚠️ Urgents à traiter\n\n")
+    file.write("## ⚠️ Urgent items to address\n\n")
     for i, comment in enumerate(urgent_comments[:10], 1):
         priority_marker = "🔴" if comment['priority'] == 1 else "⚠️"
         type_emoji = COMMENT_TYPES[comment['type']]["emoji"]
@@ -79,10 +79,10 @@ def write_urgent_comments_section(file, urgent_comments, repo_root):
 def write_report_footer(file, output_file):
     """Write report footer with link to detailed report."""
     detailed_report = os.path.splitext(output_file)[0] + "_detailed.md"
-    file.write(f"\n---\n\n*Pour plus de détails, consultez le [rapport complet]({os.path.basename(detailed_report)})*\n")
+    file.write(f"\n---\n\n*For more details, see the [full report]({os.path.basename(detailed_report)})*\n")
 
 def generate_simple_report(comments, output_file, repo_root, repo_url=None):
-    """Génère un rapport simplifié et visuellement attrayant des annotations."""
+    """Generate a simplified and visually appealing annotation report."""
     grouped_comments = defaultdict(list)
     for comment in comments:
         grouped_comments[comment['type']].append(comment)
@@ -99,9 +99,9 @@ def generate_simple_report(comments, output_file, repo_root, repo_url=None):
     with open(output_file, 'w', encoding='utf-8') as f:
         write_report_header(f, current_date)
 
-        f.write("## 🔍 En bref\n\n")
+        f.write("## 🔍 At a glance\n\n")
         total = len(comments)
-        f.write(f"**{total}** annotations au total dans le code\n\n")
+        f.write(f"**{total}** annotations found in the code\n\n")
 
         max_count = max(priority_counts.values()) if priority_counts else 1
         write_priority_section(f, priority_counts, total, max_count)
@@ -113,7 +113,7 @@ def generate_simple_report(comments, output_file, repo_root, repo_url=None):
         write_report_footer(f, output_file)
 
 def generate_markdown_report(comments, output_file, repo_root, repo_url=None):
-    """Génère un rapport détaillé au format Markdown."""
+    """Generate a detailed Markdown report from the extracted comments."""
     grouped_comments = defaultdict(list)
     for comment in comments:
         grouped_comments[comment['type']].append(comment)
@@ -143,24 +143,20 @@ def generate_markdown_report(comments, output_file, repo_root, repo_url=None):
 
     with open(output_file, 'w', encoding='utf-8') as f:
         write_md_header_toc(f, current_date, COMMENT_TYPES, grouped_comments)
-
         write_md_summary(f, comments, oldest_comment, newest_comment, top_assignees, due_comments)
-
         write_md_statistics(f, grouped_comments, total_comments, priority_counts, {k: len(v) for k, v in grouped_comments.items()})
-
         write_md_comments_by_type(f, grouped_comments, repo_root, repo_url)
-
         write_md_comments_by_priority(f, comments, priority_counts, repo_root, repo_url)
 
 def write_md_header_toc(file, current_date, comment_types, grouped_comments):
     """Write markdown report header and table of contents."""
-    file.write(f"# Rapport des annotations dans le code\n\n")
-    file.write(f"*Généré le {current_date}*\n\n")
-    file.write(f"Ce rapport liste toutes les annotations trouvées dans le code source.\n\n")
+    file.write(f"# Code Annotations Report\n\n")
+    file.write(f"*Generated on {current_date}*\n\n")
+    file.write(f"This report lists all annotations found in the source code.\n\n")
 
-    file.write("## Sommaire\n\n")
-    file.write("- [Résumé](#résumé)\n")
-    file.write("- [Statistiques](#statistiques)\n")
+    file.write("## Table of Contents\n\n")
+    file.write("- [Summary](#summary)\n")
+    file.write("- [Statistics](#statistics)\n")
 
     for comment_type in comment_types:
         if comment_type in grouped_comments:
@@ -169,43 +165,43 @@ def write_md_header_toc(file, current_date, comment_types, grouped_comments):
             description = COMMENT_TYPES[comment_type]["description"]
             file.write(f"- [{emoji} {description} ({count})](#user-content-{comment_type.lower().replace(' ', '-')})\n")
 
-    file.write("- [Par priorité](#par-priorité)\n")
+    file.write("- [By priority](#by-priority)\n")
 
 def write_md_summary(file, comments, oldest_comment, newest_comment, top_assignees, due_comments):
     """Write summary section of markdown report."""
-    file.write("\n## Résumé\n\n")
+    file.write("\n## Summary\n\n")
     total = len(comments)
-    file.write(f"**Total des annotations:** {total}\n\n")
+    file.write(f"**Total annotations:** {total}\n\n")
 
     if oldest_comment:
         oldest_age = calculate_age_in_days(oldest_comment['created'])
-        file.write(f"**Annotation la plus ancienne:** {oldest_age} jours ({oldest_comment['created']})\n")
+        file.write(f"**Oldest annotation:** {oldest_age} days ({oldest_comment['created']})\n")
         file.write(f"- {oldest_comment['file']}:{oldest_comment['line']} - {oldest_comment['text']}\n\n")
 
     if newest_comment:
         newest_age = calculate_age_in_days(newest_comment['created'])
-        file.write(f"**Annotation la plus récente:** {newest_age} jours ({newest_comment['created']})\n")
+        file.write(f"**Most recent annotation:** {newest_age} days ({newest_comment['created']})\n")
         file.write(f"- {newest_comment['file']}:{newest_comment['line']} - {newest_comment['text']}\n\n")
 
     if top_assignees:
-        file.write("**Top contributeurs:**\n")
+        file.write("**Top contributors:**\n")
         for assignee, count in top_assignees:
             file.write(f"- @{assignee}: {count} annotations\n")
         file.write("\n")
 
     if due_comments:
-        file.write("**Prochaines échéances:**\n")
+        file.write("**Upcoming deadlines:**\n")
         for comment in due_comments[:5]:
             file.write(f"- {comment['due_date']} - {comment['file']}:{comment['line']} - {comment['text']}\n")
         file.write("\n")
 
 def write_md_statistics(file, grouped_comments, total, priority_counts, assignees_count):
     """Write statistics section of markdown report."""
-    file.write("## Statistiques\n\n")
+    file.write("## Statistics\n\n")
 
-    file.write("### Par type\n\n")
-    file.write("| Type | Nombre | Pourcentage |\n")
-    file.write("|------|--------|-------------|\n")
+    file.write("### By type\n\n")
+    file.write("| Type | Count | Percentage |\n")
+    file.write("|------|-------|------------|\n")
     for comment_type in COMMENT_TYPES:
         if comment_type in grouped_comments:
             count = len(grouped_comments[comment_type])
@@ -214,9 +210,9 @@ def write_md_statistics(file, grouped_comments, total, priority_counts, assignee
             file.write(f"| {emoji} {comment_type} | {count} | {percentage:.1f}% |\n")
     file.write("\n")
 
-    file.write("### Par priorité\n\n")
-    file.write("| Priorité | Nombre | Pourcentage |\n")
-    file.write("|----------|--------|-------------|\n")
+    file.write("### By priority\n\n")
+    file.write("| Priority | Count | Percentage |\n")
+    file.write("|----------|-------|------------|\n")
     for priority in sorted(priority_counts.keys()):
         count = priority_counts[priority]
         percentage = (count / total) * 100 if total > 0 else 0
@@ -225,9 +221,9 @@ def write_md_statistics(file, grouped_comments, total, priority_counts, assignee
     file.write("\n")
 
     if assignees_count:
-        file.write("### Par assigné\n\n")
-        file.write("| Assigné | Nombre | Pourcentage |\n")
-        file.write("|---------|--------|-------------|\n")
+        file.write("### By assignee\n\n")
+        file.write("| Assignee | Count | Percentage |\n")
+        file.write("|----------|-------|------------|\n")
         for assignee, count in sorted(assignees_count.items(), key=lambda x: x[1], reverse=True):
             percentage = (count / total) * 100 if total > 0 else 0
             file.write(f"| @{assignee} | {count} | {percentage:.1f}% |\n")
@@ -237,12 +233,12 @@ def format_comment_metadata(comment, repo_url):
     """Format metadata for a comment."""
     metadata = []
 
-    if comment['priority'] <= 2:  # Seulement pour les priorités élevées
+    if comment['priority'] <= 2:  # Only for high priorities
         metadata.append(generate_priority_label(comment['priority']))
 
     if comment['due_date']:
         days_to_due = calculate_days_to_due(comment['due_date'])
-        due_status = "🚨 **EN RETARD**" if days_to_due < 0 else f"⏰ Échéance dans {days_to_due} jours"
+        due_status = "🚨 **OVERDUE**" if days_to_due < 0 else f"⏰ Due in {days_to_due} days"
         metadata.append(f"{due_status} ({comment['due_date']})")
 
     if comment['assignees']:
@@ -257,8 +253,8 @@ def format_comment_metadata(comment, repo_url):
         metadata.append(issue_text)
 
     age = calculate_age_in_days(comment['created'])
-    age_text = f"il y a {age} jours" if age < 999 else "date inconnue"
-    metadata.append(f"📅 Créé {age_text} par {comment['author']}")
+    age_text = f"{age} days ago" if age < 999 else "unknown date"
+    metadata.append(f"📅 Created {age_text} by {comment['author']}")
 
     return metadata
 
@@ -314,7 +310,7 @@ def write_md_comments_by_priority(file, comments, priority_counts, repo_root, re
             file.write(f"{line}\n\n")
 
 def generate_json_data(comments, output_file, repo_root):
-    """Génère des données JSON à partir des commentaires."""
+    """Generate JSON data from comments."""
     import json
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(comments, f, ensure_ascii=False, indent=4)

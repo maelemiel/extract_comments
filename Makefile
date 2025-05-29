@@ -2,7 +2,7 @@ NAME = extract_comments
 SRC = __main__.py
 
 run:
-	python3 -m $(NAME) $(ARGS)
+	python3 -m $(SRC) $(ARGS)
 
 build:
 	pyinstaller --onefile -n $(NAME) $(SRC)

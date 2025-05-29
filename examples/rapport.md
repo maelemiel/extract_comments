@@ -1,16 +1,16 @@
-# 📋 Rapport d'annotations
+# 📋 Annotations Report
 
-*Généré le 2025-04-11*
+*Generated on 2025-04-11*
 
-## 🔍 En bref
+## 🔍 At a glance
 
-**46** annotations au total dans le code
+**46** annotations found in the code
 
-### ⚡ Priorités
+### ⚡ Priorities
 
-🔴 Critique  | ██████░░░░░░░░░░░░░░ | 8 (17.4%)
-🟠 Élevée   | ████████████████████ | 26 (56.5%)
-🟡 Moyenne  | █████████░░░░░░░░░░░ | 12 (26.1%)
+🔴 Critical  | ██████░░░░░░░░░░░░░░ | 8 (17.4%)
+🟠 High      | ████████████████████ | 26 (56.5%)
+🟡 Medium    | █████████░░░░░░░░░░░ | 12 (26.1%)
 
 ### 🏷️ Types
 
@@ -26,48 +26,47 @@
 💡 IDEA         | ████████░░░░░░░ | 4
 🚧 IN PROGRESS  | ██████░░░░░░░░░ | 3
 
-## ⚠️ Urgents à traiter
+## ⚠️ Urgent items to address
 
 1. 🔴 🚨 **index.html:14**
-   Le logo ne s'affiche pas correctement sur mobile
-   *🚨 532j de retard | 👤 @alice*
+   The logo does not display correctly on mobile
+   *🚨 532d overdue | 👤 @alice*
 
 2. 🔴 🚨 **script.js:13**
-   Gérer les erreurs de réseau correctement
-   *🚨 530j de retard | 👤 @alice*
+   Handle network errors properly
+   *🚨 530d overdue | 👤 @alice*
 
 3. 🔴 🐛 **index.html:31**
-   Le bouton ne fonctionne pas sous Firefox
-   *🚨 527j de retard*
+   The button does not work on Firefox
+   *🚨 527d overdue*
 
 4. 🔴 🐛 **styles.css:42**
-   Les styles d'animation provoquent des saccades sur Chrome
-   *🚨 524j de retard*
+   Animation styles cause stuttering on Chrome
+   *🚨 524d overdue*
 
 5. 🔴 🐛 **app.py:22**
-   Le message n'est pas encodé correctement pour les caractères spéciaux
-   *🚨 514j de retard*
+   The message is not properly encoded for special characters
+   *🚨 514d overdue*
 
 6. 🔴 🚨 **app.py:16**
-   Implémenter la vérification de mot de passe
+   Implement password verification
    *👤 @alice*
 
 7. 🔴 🐛 **script.js:17**
-   L'erreur n'est pas correctement transmise à l'interface
+   The error is not properly passed to the UI
 
 8. 🔴 🚨 **styles.css:14**
-   Le fond ne s'étend pas sur toute la hauteur sur Safari
+   Background does not stretch to full height on Safari
    *👤 @alice*
 
 9. ⚠️ 🚧 **script.js:52**
-   Refactorisation du système d'authentification
-   *🚨 514j de retard | 👤 @alice*
+   Refactor authentication system
+   *🚨 514d overdue | 👤 @alice*
 
 10. ⚠️ ✅ **index.html:8**
-   Ajouter les méta-tags pour SEO
-   *🚨 504j de retard | 👤 @pierre*
-
+    Add meta tags for SEO
+    *🚨 504d overdue | 👤 @pierre*
 
 ---
 
-*Pour plus de détails, consultez le [rapport complet](rapport_detailed.md)*
+*For more details, see the [full report](rapport_detailed.md)*

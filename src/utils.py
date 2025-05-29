@@ -44,13 +44,13 @@ def calculate_age_in_days(date_str):
 def generate_priority_label(priority):
     """Generate a priority label with appropriate styling."""
     if priority == 1:
-        return "🔴 **CRITIQUE**"
+        return "🔴 **CRITICAL**"
     elif priority == 2:
-        return "🟠 **ÉLEVÉE**"
+        return "🟠 **HIGH**"
     elif priority == 3:
-        return "🟡 **MOYENNE**"
+        return "🟡 **MEDIUM**"
     elif priority == 4:
-        return "🟢 **BASSE**"
+        return "🟢 **LOW**"
     else:
         return f"⚪ **P{priority}**"
 
@@ -65,9 +65,9 @@ def format_due_date_text(due_date):
 
     days_to_due = calculate_days_to_due(due_date)
     if days_to_due < 0:
-        return f"🚨 {-days_to_due}j de retard"
+        return f"🚨 {abs(days_to_due)}d overdue"
     else:
-        return f"⏰ Dans {days_to_due}j"
+        return f"⏰ In {days_to_due}d"
 
 def format_assignees_text(assignees):
     """Format assignees list to text."""

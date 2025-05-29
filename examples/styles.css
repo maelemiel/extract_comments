@@ -1,7 +1,7 @@
-/* Feuille de style d'exemple pour démontrer les annotations de commentaires */
+/* Example stylesheet to demonstrate comment annotations */
 
 :root {
-  /* TODO: Standardiser la palette de couleurs @pierre P2 DUE:2023-12-10 */
+  /* TODO: Standardize the color palette @pierre P2 DUE:2023-12-10 */
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
   --error-color: #e74c3c;
@@ -11,7 +11,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* FIXME: Le fond ne s'étend pas sur toute la hauteur sur Safari @alice P1 */
+  /* FIXME: Background does not stretch to full height on Safari @alice P1 */
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0;
@@ -21,15 +21,15 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  /* NOTE: Conserver cette marge pour la compatibilité mobile */
+  /* NOTE: Keep this margin for mobile compatibility */
   padding: 0 15px;
 }
 
-/* OPTIMIZE: Réduire la spécificité CSS @bob P3 DUE:2024-01-15 */
+/* OPTIMIZE: Reduce CSS specificity @bob P3 DUE:2024-01-15 */
 .button.primary {
   background-color: var(--primary-color);
   color: white;
-  /* HACK: Contournement pour l'alignement vertical @pierre */
+  /* HACK: Workaround for vertical alignment @pierre */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@ body {
   cursor: pointer;
 }
 
-/* BUG: Les styles d'animation provoquent des saccades sur Chrome P1 DUE:2023-11-05 */
+/* BUG: Animation styles cause stuttering on Chrome P1 DUE:2023-11-05 */
 .fade-in {
   animation: fadeIn 0.3s ease-in-out;
 }
@@ -49,25 +49,25 @@ body {
   to { opacity: 1; }
 }
 
-/* REVIEW: Évaluer si nous avons besoin de ces styles de grille @alice P2 */
+/* REVIEW: Evaluate if we need these grid styles @alice P2 */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 
-/* QUESTION: Faut-il supporter IE11? @bob */
+/* QUESTION: Should we support IE11? @bob */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* IDEA: Implémenter un mode sombre @pierre P3 CREATED:2023-09-20 */
+/* IDEA: Implement a dark mode @pierre P3 CREATED:2023-09-20 */
 @media (prefers-color-scheme: dark) {
-  /* TODO: Compléter les styles du mode sombre @alice P2 DUE:2023-12-20 */
+  /* TODO: Complete dark mode styles @alice P2 DUE:2023-12-20 */
 }
 
-/* TEMP: Styles temporaires pour le prototype, à revoir */
+/* TEMP: Temporary styles for the prototype, to be reviewed */
 .prototype-element {
   border: 1px dashed #999;
   padding: 10px;

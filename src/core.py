@@ -3,17 +3,17 @@ import re
 from .utils import get_git_blame_info
 
 COMMENT_TYPES = {
-    "TODO": {"emoji": "✅", "description": "Tâches à accomplir", "priority": 2},
-    "FIXME": {"emoji": "🚨", "description": "Problèmes critiques à résoudre", "priority": 1},
-    "BUG": {"emoji": "🐛", "description": "Bugs connus", "priority": 1},
-    "HACK": {"emoji": "⚙️", "description": "Solutions temporaires", "priority": 2},
-    "NOTE": {"emoji": "📝", "description": "Notes importantes", "priority": 3},
-    "TEMP": {"emoji": "🕒", "description": "Code temporaire", "priority": 2},
-    "IN PROGRESS": {"emoji": "🚧", "description": "Travail en cours", "priority": 2},
-    "OPTIMIZE": {"emoji": "⚡", "description": "Optimisations nécessaires", "priority": 3},
-    "REVIEW": {"emoji": "👀", "description": "Code à revoir", "priority": 2},
-    "QUESTION": {"emoji": "❓", "description": "Questions à clarifier", "priority": 2},
-    "IDEA": {"emoji": "💡", "description": "Idées à explorer", "priority": 3}
+    "TODO": {"emoji": "✅", "description": "Tasks to be done", "priority": 2},
+    "FIXME": {"emoji": "🚨", "description": "Critical issues to fix", "priority": 1},
+    "BUG": {"emoji": "🐛", "description": "Known bugs", "priority": 1},
+    "HACK": {"emoji": "⚙️", "description": "Temporary solutions", "priority": 2},
+    "NOTE": {"emoji": "📝", "description": "Important notes", "priority": 3},
+    "TEMP": {"emoji": "🕒", "description": "Temporary code", "priority": 2},
+    "IN PROGRESS": {"emoji": "🚧", "description": "Work in progress", "priority": 2},
+    "OPTIMIZE": {"emoji": "⚡", "description": "Optimizations needed", "priority": 3},
+    "REVIEW": {"emoji": "👀", "description": "Code to review", "priority": 2},
+    "QUESTION": {"emoji": "❓", "description": "Questions to clarify", "priority": 2},
+    "IDEA": {"emoji": "💡", "description": "Ideas to explore", "priority": 3}
 }
 
 ASSIGNEE_PATTERN = r'@(\w+)'

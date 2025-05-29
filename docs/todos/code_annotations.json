@@ -334,8 +334,8 @@
     },
     {
         "type": "TODO",
-        "text": "Standardiser la palette de couleurs",
-        "full_text": "Standardiser la palette de couleurs @pierre P2 DUE:2023-12-10",
+        "text": "Standardize the color palette",
+        "full_text": "Standardize the color palette @pierre P2 DUE:2023-12-10",
         "file": "./examples/styles.css",
         "line": 4,
         "assignees": [
@@ -344,13 +344,13 @@
         "priority": 2,
         "due_date": "2023-12-10",
         "issue": null,
-        "created": "2025-04-11",
-        "author": "maelemiel"
+        "created": "2025-05-29",
+        "author": "Not Committed Yet"
     },
     {
         "type": "FIXME",
-        "text": "Le fond ne s'étend pas sur toute la hauteur sur Safari",
-        "full_text": "Le fond ne s'étend pas sur toute la hauteur sur Safari @alice P1",
+        "text": "Background does not stretch to full height on Safari",
+        "full_text": "Background does not stretch to full height on Safari @alice P1",
         "file": "./examples/styles.css",
         "line": 14,
         "assignees": [
@@ -359,26 +359,26 @@
         "priority": 1,
         "due_date": null,
         "issue": null,
-        "created": "2025-04-11",
-        "author": "maelemiel"
+        "created": "2025-05-29",
+        "author": "Not Committed Yet"
     },
     {
         "type": "NOTE",
-        "text": "Conserver cette marge pour la compatibilité mobile",
-        "full_text": "Conserver cette marge pour la compatibilité mobile",
+        "text": "Keep this margin for mobile compatibility",
+        "full_text": "Keep this margin for mobile compatibility",
         "file": "./examples/styles.css",
         "line": 24,
         "assignees": [],
         "priority": 3,
         "due_date": null,
         "issue": null,
-        "created": "2025-04-11",
-        "author": "maelemiel"
+        "created": "2025-05-29",
+        "author": "Not Committed Yet"
     },
     {
         "type": "OPTIMIZE",
-        "text": "Réduire la spécificité CSS",
-        "full_text": "Réduire la spécificité CSS @bob P3 DUE:2024-01-15",
+        "text": "Reduce CSS specificity",
+        "full_text": "Reduce CSS specificity @bob P3 DUE:2024-01-15",
         "file": "./examples/styles.css",
         "line": 28,
         "assignees": [
@@ -387,13 +387,13 @@
         "priority": 3,
         "due_date": "2024-01-15",
         "issue": null,
-        "created": "2025-04-11",
-        "author": "maelemiel"
+        "created": "2025-05-29",
+        "author": "Not Committed Yet"
     },
     {
         "type": "HACK",
-        "text": "Contournement pour l'alignement vertical",
-        "full_text": "Contournement pour l'alignement vertical @pierre",
+        "text": "Workaround for vertical alignment",
+        "full_text": "Workaround for vertical alignment @pierre",
         "file": "./examples/styles.css",
         "line": 32,
         "assignees": [
@@ -402,26 +402,26 @@
         "priority": 2,
         "due_date": null,
         "issue": null,
-        "created": "2025-04-11",
-        "author": "maelemiel"
+        "created": "2025-05-29",
+        "author": "Not Committed Yet"
     },
     {
         "type": "BUG",
-        "text": "Les styles d'animation provoquent des saccades sur Chrome",
-        "full_text": "Les styles d'animation provoquent des saccades sur Chrome P1 DUE:2023-11-05",
+        "text": "Animation styles cause stuttering on Chrome",
+        "full_text": "Animation styles cause stuttering on Chrome P1 DUE:2023-11-05",
         "file": "./examples/styles.css",
         "line": 42,
         "assignees": [],
         "priority": 1,
         "due_date": "2023-11-05",
         "issue": null,
-        "created": "2025-04-11",
-        "author": "maelemiel"
+        "created": "2025-05-29",
+        "author": "Not Committed Yet"
     },
     {
         "type": "REVIEW",
-        "text": "Évaluer si nous avons besoin de ces styles de grille",
-        "full_text": "Évaluer si nous avons besoin de ces styles de grille @alice P2",
+        "text": "Evaluate if we need these grid styles",
+        "full_text": "Evaluate if we need these grid styles @alice P2",
         "file": "./examples/styles.css",
         "line": 52,
         "assignees": [
@@ -430,13 +430,13 @@
         "priority": 2,
         "due_date": null,
         "issue": null,
-        "created": "2025-04-11",
-        "author": "maelemiel"
+        "created": "2025-05-29",
+        "author": "Not Committed Yet"
     },
     {
         "type": "QUESTION",
-        "text": "Faut-il supporter IE11?",
-        "full_text": "Faut-il supporter IE11? @bob",
+        "text": "Should we support IE11?",
+        "full_text": "Should we support IE11? @bob",
         "file": "./examples/styles.css",
         "line": 59,
         "assignees": [
@@ -445,13 +445,13 @@
         "priority": 2,
         "due_date": null,
         "issue": null,
-        "created": "2025-04-11",
-        "author": "maelemiel"
+        "created": "2025-05-29",
+        "author": "Not Committed Yet"
     },
     {
         "type": "IDEA",
-        "text": "Implémenter un mode sombre",
-        "full_text": "Implémenter un mode sombre @pierre P3 CREATED:2023-09-20",
+        "text": "Implement a dark mode",
+        "full_text": "Implement a dark mode @pierre P3 CREATED:2023-09-20",
         "file": "./examples/styles.css",
         "line": 65,
         "assignees": [
@@ -461,12 +461,12 @@
         "due_date": null,
         "issue": null,
         "created": "2023-09-20",
-        "author": "maelemiel"
+        "author": "Not Committed Yet"
     },
     {
         "type": "TODO",
-        "text": "Compléter les styles du mode sombre",
-        "full_text": "Compléter les styles du mode sombre @alice P2 DUE:2023-12-20",
+        "text": "Complete dark mode styles",
+        "full_text": "Complete dark mode styles @alice P2 DUE:2023-12-20",
         "file": "./examples/styles.css",
         "line": 67,
         "assignees": [
@@ -475,21 +475,21 @@
         "priority": 2,
         "due_date": "2023-12-20",
         "issue": null,
-        "created": "2025-04-11",
-        "author": "maelemiel"
+        "created": "2025-05-29",
+        "author": "Not Committed Yet"
     },
     {
         "type": "TEMP",
-        "text": "Styles temporaires pour le prototype, à revoir",
-        "full_text": "Styles temporaires pour le prototype, à revoir",
+        "text": "Temporary styles for the prototype, to be reviewed",
+        "full_text": "Temporary styles for the prototype, to be reviewed",
         "file": "./examples/styles.css",
         "line": 70,
         "assignees": [],
         "priority": 2,
         "due_date": null,
         "issue": null,
-        "created": "2025-04-11",
-        "author": "maelemiel"
+        "created": "2025-05-29",
+        "author": "Not Committed Yet"
     },
     {
         "type": "TODO",
@@ -664,5 +664,35 @@
         "issue": null,
         "created": "2025-04-11",
         "author": "maelemiel"
+    },
+    {
+        "type": "TODO",
+        "text": "Do this",
+        "full_text": "Do this @alice P1 DUE:2025-12-31 #42 CREATED:2025-01-01",
+        "file": "./tests/test_core.py",
+        "line": 48,
+        "assignees": [
+            "alice"
+        ],
+        "priority": 1,
+        "due_date": "2025-12-31",
+        "issue": "42",
+        "created": "2025-01-01",
+        "author": "Not Committed Yet"
+    },
+    {
+        "type": "BUG",
+        "text": "Fix bug",
+        "full_text": "Fix bug @bob P2",
+        "file": "./tests/test_core.py",
+        "line": 49,
+        "assignees": [
+            "bob"
+        ],
+        "priority": 2,
+        "due_date": null,
+        "issue": null,
+        "created": "2025-05-29",
+        "author": "Not Committed Yet"
     }
 ]

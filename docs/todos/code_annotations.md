@@ -1,385 +1,408 @@
-# Rapport des annotations dans le code
+# Code Annotations Report
 
-*Généré le 2025-05-29 à 18:17:04*
+*Generated on 2025-05-29*
 
-Ce rapport liste toutes les annotations trouvées dans le code source.
+This report lists all annotations found in the source code.
 
-## Sommaire
+## Table of Contents
 
-- [Résumé](#résumé)
-- [Statistiques](#statistiques)
-- [✅ Tâches à accomplir (7)](#user-content-todo)
-- [🚨 Problèmes critiques à résoudre (4)](#user-content-fixme)
-- [🐛 Bugs connus (4)](#user-content-bug)
-- [⚙️ Solutions temporaires (4)](#user-content-hack)
-- [📝 Notes importantes (4)](#user-content-note)
-- [🕒 Code temporaire (4)](#user-content-temp)
-- [🚧 Travail en cours (3)](#user-content-in-progress)
-- [⚡ Optimisations nécessaires (4)](#user-content-optimize)
-- [👀 Code à revoir (4)](#user-content-review)
-- [❓ Questions à clarifier (4)](#user-content-question)
-- [💡 Idées à explorer (4)](#user-content-idea)
-- [Par priorité](#par-priorité)
+- [Summary](#summary)
+- [Statistics](#statistics)
+- [✅ Tasks to be done (8)](#user-content-todo)
+- [🚨 Critical issues to fix (4)](#user-content-fixme)
+- [🐛 Known bugs (5)](#user-content-bug)
+- [⚙️ Temporary solutions (4)](#user-content-hack)
+- [📝 Important notes (4)](#user-content-note)
+- [🕒 Temporary code (4)](#user-content-temp)
+- [🚧 Work in progress (3)](#user-content-in-progress)
+- [⚡ Optimizations needed (4)](#user-content-optimize)
+- [👀 Code to review (4)](#user-content-review)
+- [❓ Questions to clarify (4)](#user-content-question)
+- [💡 Ideas to explore (4)](#user-content-idea)
+- [By priority](#by-priority)
 
-## Résumé
+## Summary
 
-**Total des annotations:** 46
+**Total annotations:** 48
 
-**Annotation la plus ancienne:** 622 jours (2023-09-15)
+**Oldest annotation:** 622 days (2023-09-15)
 - ./examples/script.js:47 - Implémenter un système de thèmes pour l'interface
 
-**Annotation la plus récente:** 48 jours (2025-04-11)
-- ./examples/app.py:16 - Implémenter la vérification de mot de passe
+**Most recent annotation:** 0 days (2025-05-29)
+- ./examples/styles.css:4 - Standardize the color palette
 
-**Top contributeurs:**
-- @alice: 12 annotations
+**Top contributors:**
+- @alice: 13 annotations
 - @pierre: 12 annotations
-- @bob: 10 annotations
+- @bob: 11 annotations
 
-**Prochaines échéances:**
+**Upcoming deadlines:**
 - 2023-10-28 - ./examples/index.html:14 - Le logo ne s'affiche pas correctement sur mobile
 - 2023-10-30 - ./examples/script.js:13 - Gérer les erreurs de réseau correctement
 - 2023-11-02 - ./examples/index.html:31 - Le bouton ne fonctionne pas sous Firefox
-- 2023-11-05 - ./examples/styles.css:42 - Les styles d'animation provoquent des saccades sur Chrome
+- 2023-11-05 - ./examples/styles.css:42 - Animation styles cause stuttering on Chrome
 - 2023-11-15 - ./examples/app.py:22 - Le message n'est pas encodé correctement pour les caractères spéciaux
 
-## Statistiques
+## Statistics
 
-### Par type
+### By type
 
-| Type | Nombre | Pourcentage |
-|------|--------|-------------|
-| ✅ TODO | 7 | 15.2% |
-| 🚨 FIXME | 4 | 8.7% |
-| 🐛 BUG | 4 | 8.7% |
-| ⚙️ HACK | 4 | 8.7% |
-| 📝 NOTE | 4 | 8.7% |
-| 🕒 TEMP | 4 | 8.7% |
-| 🚧 IN PROGRESS | 3 | 6.5% |
-| ⚡ OPTIMIZE | 4 | 8.7% |
-| 👀 REVIEW | 4 | 8.7% |
-| ❓ QUESTION | 4 | 8.7% |
-| 💡 IDEA | 4 | 8.7% |
+| Type | Count | Percentage |
+|------|-------|------------|
+| ✅ TODO | 8 | 16.7% |
+| 🚨 FIXME | 4 | 8.3% |
+| 🐛 BUG | 5 | 10.4% |
+| ⚙️ HACK | 4 | 8.3% |
+| 📝 NOTE | 4 | 8.3% |
+| 🕒 TEMP | 4 | 8.3% |
+| 🚧 IN PROGRESS | 3 | 6.2% |
+| ⚡ OPTIMIZE | 4 | 8.3% |
+| 👀 REVIEW | 4 | 8.3% |
+| ❓ QUESTION | 4 | 8.3% |
+| 💡 IDEA | 4 | 8.3% |
 
-### Par priorité
+### By priority
 
-| Priorité | Nombre | Pourcentage |
-|----------|--------|-------------|
-| 🔴 CRITIQUE | 8 | 17.4% |
-| 🟠 ÉLEVÉE | 26 | 56.5% |
-| 🟡 MOYENNE | 12 | 26.1% |
+| Priority | Count | Percentage |
+|----------|-------|------------|
+| 🔴 CRITICAL | 9 | 18.8% |
+| 🟠 HIGH | 27 | 56.2% |
+| 🟡 MEDIUM | 12 | 25.0% |
+| 🟢 LOW | 0 | 0.0% |
 
-### Par assigné
+### By assignee
 
-| Assigné | Nombre | Pourcentage |
-|---------|--------|-------------|
-| @alice | 12 | 26.1% |
-| @pierre | 12 | 26.1% |
-| @bob | 10 | 21.7% |
+| Assignee | Count | Percentage |
+|----------|-------|------------|
+| @TODO | 8 | 16.7% |
+| @BUG | 5 | 10.4% |
+| @FIXME | 4 | 8.3% |
+| @REVIEW | 4 | 8.3% |
+| @TEMP | 4 | 8.3% |
+| @HACK | 4 | 8.3% |
+| @NOTE | 4 | 8.3% |
+| @OPTIMIZE | 4 | 8.3% |
+| @QUESTION | 4 | 8.3% |
+| @IDEA | 4 | 8.3% |
+| @IN PROGRESS | 3 | 6.2% |
 
-## ✅ Tâches à accomplir <a name='todo' />
+## ✅ Tasks to be done <a name='todo' />
 
 - [examples/app.py:12](file:///./examples/app.py#L12): Ajouter validation d'email
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-31) | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-31) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - [examples/app.py:48](file:///./examples/app.py#L48): Implémenter l'endpoint API REST pour la création d'utilisateurs
-  🟠 **ÉLEVÉE** | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - [examples/script.js:5](file:///./examples/script.js#L5): Convertir ce script en TypeScript
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-11-30) | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-11-30) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
-- [examples/styles.css:4](file:///./examples/styles.css#L4): Standardiser la palette de couleurs
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-10) | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+- [examples/styles.css:4](file:///./examples/styles.css#L4): Standardize the color palette
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-10) | 👤 @pierre | 📅 Created 0 days ago by Not Committed Yet
 
-- [examples/styles.css:67](file:///./examples/styles.css#L67): Compléter les styles du mode sombre
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-20) | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+- [examples/styles.css:67](file:///./examples/styles.css#L67): Complete dark mode styles
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-20) | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
 
 - [examples/index.html:8](file:///./examples/index.html#L8): Ajouter les méta-tags pour SEO
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-11-25) | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-11-25) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - [examples/index.html:71](file:///./examples/index.html#L71): Ajouter les liens de réseaux sociaux
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-05) | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-05) | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
-## 🚨 Problèmes critiques à résoudre <a name='fixme' />
+- [tests/test_core.py:48](file:///./tests/test_core.py#L48): Do this
+  🔴 **CRITICAL** | ⏰ Due in 215 days (2025-12-31) | 👤 @alice | 🔗 #42 | 📅 Created 148 days ago by Not Committed Yet
+
+## 🚨 Critical issues to fix <a name='fixme' />
 
 - [examples/app.py:16](file:///./examples/app.py#L16): Implémenter la vérification de mot de passe
-  🔴 **CRITIQUE** | 👤 @alice | 🔗 #42 | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 👤 @alice | 🔗 #42 | 📅 Created 48 days ago by maelemiel
 
 - [examples/script.js:13](file:///./examples/script.js#L13): Gérer les erreurs de réseau correctement
-  🔴 **CRITIQUE** | 🚨 **EN RETARD** (2023-10-30) | 👤 @alice | 🔗 #12 | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-10-30) | 👤 @alice | 🔗 #12 | 📅 Created 48 days ago by maelemiel
 
-- [examples/styles.css:14](file:///./examples/styles.css#L14): Le fond ne s'étend pas sur toute la hauteur sur Safari
-  🔴 **CRITIQUE** | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+- [examples/styles.css:14](file:///./examples/styles.css#L14): Background does not stretch to full height on Safari
+  🔴 **CRITICAL** | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
 
 - [examples/index.html:14](file:///./examples/index.html#L14): Le logo ne s'affiche pas correctement sur mobile
-  🔴 **CRITIQUE** | 🚨 **EN RETARD** (2023-10-28) | 👤 @alice | 🔗 #23 | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-10-28) | 👤 @alice | 🔗 #23 | 📅 Created 48 days ago by maelemiel
 
-## 🐛 Bugs connus <a name='bug' />
+## 🐛 Known bugs <a name='bug' />
 
 - [examples/app.py:22](file:///./examples/app.py#L22): Le message n'est pas encodé correctement pour les caractères spéciaux
-  🔴 **CRITIQUE** | 🚨 **EN RETARD** (2023-11-15) | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-15) | 📅 Created 48 days ago by maelemiel
 
 - [examples/script.js:17](file:///./examples/script.js#L17): L'erreur n'est pas correctement transmise à l'interface
-  🔴 **CRITIQUE** | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 📅 Created 48 days ago by maelemiel
 
-- [examples/styles.css:42](file:///./examples/styles.css#L42): Les styles d'animation provoquent des saccades sur Chrome
-  🔴 **CRITIQUE** | 🚨 **EN RETARD** (2023-11-05) | 📅 Créé il y a 48 jours par maelemiel
+- [examples/styles.css:42](file:///./examples/styles.css#L42): Animation styles cause stuttering on Chrome
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-05) | 📅 Created 0 days ago by Not Committed Yet
 
 - [examples/index.html:31](file:///./examples/index.html#L31): Le bouton ne fonctionne pas sous Firefox
-  🔴 **CRITIQUE** | 🚨 **EN RETARD** (2023-11-02) | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-02) | 📅 Created 48 days ago by maelemiel
 
-## ⚙️ Solutions temporaires <a name='hack' />
+- [tests/test_core.py:49](file:///./tests/test_core.py#L49): Fix bug
+  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
+
+## ⚙️ Temporary solutions <a name='hack' />
 
 - [examples/app.py:31](file:///./examples/app.py#L31): Contournement temporaire pour la connexion à la base de données
-  🟠 **ÉLEVÉE** | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - [examples/script.js:31](file:///./examples/script.js#L31): Contourne le problème de rendu sur Safari
-  🟠 **ÉLEVÉE** | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
-- [examples/styles.css:32](file:///./examples/styles.css#L32): Contournement pour l'alignement vertical
-  🟠 **ÉLEVÉE** | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+- [examples/styles.css:32](file:///./examples/styles.css#L32): Workaround for vertical alignment
+  🟠 **HIGH** | 👤 @pierre | 📅 Created 0 days ago by Not Committed Yet
 
 - [examples/index.html:43](file:///./examples/index.html#L43): Alignement temporaire jusqu'à refactorisation
-  🟠 **ÉLEVÉE** | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
-## 📝 Notes importantes <a name='note' />
+## 📝 Important notes <a name='note' />
 
 - [examples/app.py:35](file:///./examples/app.py#L35): Le mot de passe est stocké dans les variables d'environnement
-  📅 Créé il y a 48 jours par maelemiel
+  📅 Created 48 days ago by maelemiel
 
 - [examples/script.js:36](file:///./examples/script.js#L36): Les gestionnaires d'événements devraient être déplacés dans un module séparé
-  📅 Créé il y a 48 jours par maelemiel
+  📅 Created 48 days ago by maelemiel
 
-- [examples/styles.css:24](file:///./examples/styles.css#L24): Conserver cette marge pour la compatibilité mobile
-  📅 Créé il y a 48 jours par maelemiel
+- [examples/styles.css:24](file:///./examples/styles.css#L24): Keep this margin for mobile compatibility
+  📅 Created 0 days ago by Not Committed Yet
 
 - [examples/index.html:17](file:///./examples/index.html#L17): La structure du menu sera révisée dans une prochaine itération
-  📅 Créé il y a 48 jours par maelemiel
+  📅 Created 48 days ago by maelemiel
 
-## 🕒 Code temporaire <a name='temp' />
+## 🕒 Temporary code <a name='temp' />
 
 - [examples/app.py:26](file:///./examples/app.py#L26): Implémentation temporaire, sera remplacée par un service réel
-  🟠 **ÉLEVÉE** | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 📅 Created 48 days ago by maelemiel
 
 - [examples/script.js:58](file:///./examples/script.js#L58): À remplacer par l'intégration avec le système d'authentification
-  🟠 **ÉLEVÉE** | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 📅 Created 48 days ago by maelemiel
 
-- [examples/styles.css:70](file:///./examples/styles.css#L70): Styles temporaires pour le prototype, à revoir
-  🟠 **ÉLEVÉE** | 📅 Créé il y a 48 jours par maelemiel
+- [examples/styles.css:70](file:///./examples/styles.css#L70): Temporary styles for the prototype, to be reviewed
+  🟠 **HIGH** | 📅 Created 0 days ago by Not Committed Yet
 
 - [examples/index.html:62](file:///./examples/index.html#L62): Formulaire simplifié, à enrichir
-  🟠 **ÉLEVÉE** | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 📅 Created 48 days ago by maelemiel
 
-## 🚧 Travail en cours <a name='in-progress' />
+## 🚧 Work in progress <a name='in-progress' />
 
 - [examples/app.py:54](file:///./examples/app.py#L54): Développement du système de rapports
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-25) | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-25) | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - [examples/script.js:52](file:///./examples/script.js#L52): Refactorisation du système d'authentification
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-11-15) | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-11-15) | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
 - [examples/index.html:58](file:///./examples/index.html#L58): Section de contact en cours de développement
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-15) | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-15) | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
-## ⚡ Optimisations nécessaires <a name='optimize' />
+## ⚡ Optimizations needed <a name='optimize' />
 
 - [examples/app.py:40](file:///./examples/app.py#L40): Cette fonction est lente avec de grandes quantités de données
-  🚨 **EN RETARD** (2024-01-15) | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+  🚨 **OVERDUE** (2024-01-15) | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
 - [examples/script.js:27](file:///./examples/script.js#L27): Réduire le nombre d'appels DOM
-  👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  👤 @bob | 📅 Created 48 days ago by maelemiel
 
-- [examples/styles.css:28](file:///./examples/styles.css#L28): Réduire la spécificité CSS
-  🚨 **EN RETARD** (2024-01-15) | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+- [examples/styles.css:28](file:///./examples/styles.css#L28): Reduce CSS specificity
+  🚨 **OVERDUE** (2024-01-15) | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
 
 - [examples/index.html:35](file:///./examples/index.html#L35): Améliorer la structure des sections pour le SEO
-  🚨 **EN RETARD** (2024-01-10) | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🚨 **OVERDUE** (2024-01-10) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
-## 👀 Code à revoir <a name='review' />
+## 👀 Code to review <a name='review' />
 
 - [examples/app.py:20](file:///./examples/app.py#L20): Évaluer si nous devrions utiliser un template
-  🟠 **ÉLEVÉE** | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - [examples/script.js:43](file:///./examples/script.js#L43): Cette logique de validation pourrait être simplifiée
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-05) | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-05) | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
-- [examples/styles.css:52](file:///./examples/styles.css#L52): Évaluer si nous avons besoin de ces styles de grille
-  🟠 **ÉLEVÉE** | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+- [examples/styles.css:52](file:///./examples/styles.css#L52): Evaluate if we need these grid styles
+  🟠 **HIGH** | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
 
 - [examples/index.html:29](file:///./examples/index.html#L29): Vérifier que le texte est clair et concis
-  🟠 **ÉLEVÉE** | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
-## ❓ Questions à clarifier <a name='question' />
+## ❓ Questions to clarify <a name='question' />
 
 - [examples/app.py:43](file:///./examples/app.py#L43): Devrions-nous filtrer les valeurs nulles?
-  🟠 **ÉLEVÉE** | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - [examples/script.js:41](file:///./examples/script.js#L41): Devrions-nous utiliser une bibliothèque de validation?
-  🟠 **ÉLEVÉE** | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
-- [examples/styles.css:59](file:///./examples/styles.css#L59): Faut-il supporter IE11?
-  🟠 **ÉLEVÉE** | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+- [examples/styles.css:59](file:///./examples/styles.css#L59): Should we support IE11?
+  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
 
 - [examples/index.html:49](file:///./examples/index.html#L49): Devrions-nous ajouter des icônes pour chaque fonctionnalité?
-  🟠 **ÉLEVÉE** | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
-## 💡 Idées à explorer <a name='idea' />
-
-- [examples/script.js:47](file:///./examples/script.js#L47): Implémenter un système de thèmes pour l'interface
-  👤 @pierre | 📅 Créé il y a 622 jours par maelemiel
-
-- [examples/styles.css:65](file:///./examples/styles.css#L65): Implémenter un mode sombre
-  👤 @pierre | 📅 Créé il y a 617 jours par maelemiel
-
-- [examples/index.html:56](file:///./examples/index.html#L56): Ajouter une section témoignages
-  👤 @pierre | 📅 Créé il y a 612 jours par maelemiel
+## 💡 Ideas to explore <a name='idea' />
 
 - [examples/app.py:52](file:///./examples/app.py#L52): Ajouter une fonctionnalité d'export PDF des rapports
-  👤 @alice | 📅 Créé il y a 606 jours par maelemiel
+  👤 @alice | 📅 Created 606 days ago by maelemiel
+
+- [examples/script.js:47](file:///./examples/script.js#L47): Implémenter un système de thèmes pour l'interface
+  👤 @pierre | 📅 Created 622 days ago by maelemiel
+
+- [examples/styles.css:65](file:///./examples/styles.css#L65): Implement a dark mode
+  👤 @pierre | 📅 Created 617 days ago by Not Committed Yet
+
+- [examples/index.html:56](file:///./examples/index.html#L56): Ajouter une section témoignages
+  👤 @pierre | 📅 Created 612 days ago by maelemiel
 
 ## Par priorité
 
-### 🔴 **CRITIQUE**
+### 🔴 **CRITICAL**
 
 - 🚨 **FIXME**: [examples/app.py:16](file:///./examples/app.py#L16): Implémenter la vérification de mot de passe
-  🔴 **CRITIQUE** | 👤 @alice | 🔗 #42 | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 👤 @alice | 🔗 #42 | 📅 Created 48 days ago by maelemiel
 
 - 🐛 **BUG**: [examples/app.py:22](file:///./examples/app.py#L22): Le message n'est pas encodé correctement pour les caractères spéciaux
-  🔴 **CRITIQUE** | 🚨 **EN RETARD** (2023-11-15) | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-15) | 📅 Created 48 days ago by maelemiel
 
 - 🚨 **FIXME**: [examples/script.js:13](file:///./examples/script.js#L13): Gérer les erreurs de réseau correctement
-  🔴 **CRITIQUE** | 🚨 **EN RETARD** (2023-10-30) | 👤 @alice | 🔗 #12 | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-10-30) | 👤 @alice | 🔗 #12 | 📅 Created 48 days ago by maelemiel
 
 - 🐛 **BUG**: [examples/script.js:17](file:///./examples/script.js#L17): L'erreur n'est pas correctement transmise à l'interface
-  🔴 **CRITIQUE** | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 📅 Created 48 days ago by maelemiel
 
-- 🚨 **FIXME**: [examples/styles.css:14](file:///./examples/styles.css#L14): Le fond ne s'étend pas sur toute la hauteur sur Safari
-  🔴 **CRITIQUE** | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+- 🚨 **FIXME**: [examples/styles.css:14](file:///./examples/styles.css#L14): Background does not stretch to full height on Safari
+  🔴 **CRITICAL** | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
 
-- 🐛 **BUG**: [examples/styles.css:42](file:///./examples/styles.css#L42): Les styles d'animation provoquent des saccades sur Chrome
-  🔴 **CRITIQUE** | 🚨 **EN RETARD** (2023-11-05) | 📅 Créé il y a 48 jours par maelemiel
+- 🐛 **BUG**: [examples/styles.css:42](file:///./examples/styles.css#L42): Animation styles cause stuttering on Chrome
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-05) | 📅 Created 0 days ago by Not Committed Yet
 
 - 🚨 **FIXME**: [examples/index.html:14](file:///./examples/index.html#L14): Le logo ne s'affiche pas correctement sur mobile
-  🔴 **CRITIQUE** | 🚨 **EN RETARD** (2023-10-28) | 👤 @alice | 🔗 #23 | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-10-28) | 👤 @alice | 🔗 #23 | 📅 Created 48 days ago by maelemiel
 
 - 🐛 **BUG**: [examples/index.html:31](file:///./examples/index.html#L31): Le bouton ne fonctionne pas sous Firefox
-  🔴 **CRITIQUE** | 🚨 **EN RETARD** (2023-11-02) | 📅 Créé il y a 48 jours par maelemiel
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-02) | 📅 Created 48 days ago by maelemiel
 
-### 🟠 **ÉLEVÉE**
+- ✅ **TODO**: [tests/test_core.py:48](file:///./tests/test_core.py#L48): Do this
+  🔴 **CRITICAL** | ⏰ Due in 215 days (2025-12-31) | 👤 @alice | 🔗 #42 | 📅 Created 148 days ago by Not Committed Yet
+
+### 🟠 **HIGH**
 
 - ✅ **TODO**: [examples/app.py:12](file:///./examples/app.py#L12): Ajouter validation d'email
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-31) | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-31) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - 👀 **REVIEW**: [examples/app.py:20](file:///./examples/app.py#L20): Évaluer si nous devrions utiliser un template
-  🟠 **ÉLEVÉE** | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - 🕒 **TEMP**: [examples/app.py:26](file:///./examples/app.py#L26): Implémentation temporaire, sera remplacée par un service réel
-  🟠 **ÉLEVÉE** | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 📅 Created 48 days ago by maelemiel
 
 - ⚙️ **HACK**: [examples/app.py:31](file:///./examples/app.py#L31): Contournement temporaire pour la connexion à la base de données
-  🟠 **ÉLEVÉE** | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - ❓ **QUESTION**: [examples/app.py:43](file:///./examples/app.py#L43): Devrions-nous filtrer les valeurs nulles?
-  🟠 **ÉLEVÉE** | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - ✅ **TODO**: [examples/app.py:48](file:///./examples/app.py#L48): Implémenter l'endpoint API REST pour la création d'utilisateurs
-  🟠 **ÉLEVÉE** | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - 🚧 **IN PROGRESS**: [examples/app.py:54](file:///./examples/app.py#L54): Développement du système de rapports
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-25) | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-25) | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - ✅ **TODO**: [examples/script.js:5](file:///./examples/script.js#L5): Convertir ce script en TypeScript
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-11-30) | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-11-30) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - ⚙️ **HACK**: [examples/script.js:31](file:///./examples/script.js#L31): Contourne le problème de rendu sur Safari
-  🟠 **ÉLEVÉE** | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - ❓ **QUESTION**: [examples/script.js:41](file:///./examples/script.js#L41): Devrions-nous utiliser une bibliothèque de validation?
-  🟠 **ÉLEVÉE** | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
 - 👀 **REVIEW**: [examples/script.js:43](file:///./examples/script.js#L43): Cette logique de validation pourrait être simplifiée
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-05) | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-05) | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - 🚧 **IN PROGRESS**: [examples/script.js:52](file:///./examples/script.js#L52): Refactorisation du système d'authentification
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-11-15) | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-11-15) | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
 - 🕒 **TEMP**: [examples/script.js:58](file:///./examples/script.js#L58): À remplacer par l'intégration avec le système d'authentification
-  🟠 **ÉLEVÉE** | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 📅 Created 48 days ago by maelemiel
 
-- ✅ **TODO**: [examples/styles.css:4](file:///./examples/styles.css#L4): Standardiser la palette de couleurs
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-10) | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+- ✅ **TODO**: [examples/styles.css:4](file:///./examples/styles.css#L4): Standardize the color palette
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-10) | 👤 @pierre | 📅 Created 0 days ago by Not Committed Yet
 
-- ⚙️ **HACK**: [examples/styles.css:32](file:///./examples/styles.css#L32): Contournement pour l'alignement vertical
-  🟠 **ÉLEVÉE** | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+- ⚙️ **HACK**: [examples/styles.css:32](file:///./examples/styles.css#L32): Workaround for vertical alignment
+  🟠 **HIGH** | 👤 @pierre | 📅 Created 0 days ago by Not Committed Yet
 
-- 👀 **REVIEW**: [examples/styles.css:52](file:///./examples/styles.css#L52): Évaluer si nous avons besoin de ces styles de grille
-  🟠 **ÉLEVÉE** | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+- 👀 **REVIEW**: [examples/styles.css:52](file:///./examples/styles.css#L52): Evaluate if we need these grid styles
+  🟠 **HIGH** | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
 
-- ❓ **QUESTION**: [examples/styles.css:59](file:///./examples/styles.css#L59): Faut-il supporter IE11?
-  🟠 **ÉLEVÉE** | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+- ❓ **QUESTION**: [examples/styles.css:59](file:///./examples/styles.css#L59): Should we support IE11?
+  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
 
-- ✅ **TODO**: [examples/styles.css:67](file:///./examples/styles.css#L67): Compléter les styles du mode sombre
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-20) | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+- ✅ **TODO**: [examples/styles.css:67](file:///./examples/styles.css#L67): Complete dark mode styles
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-20) | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
 
-- 🕒 **TEMP**: [examples/styles.css:70](file:///./examples/styles.css#L70): Styles temporaires pour le prototype, à revoir
-  🟠 **ÉLEVÉE** | 📅 Créé il y a 48 jours par maelemiel
+- 🕒 **TEMP**: [examples/styles.css:70](file:///./examples/styles.css#L70): Temporary styles for the prototype, to be reviewed
+  🟠 **HIGH** | 📅 Created 0 days ago by Not Committed Yet
 
 - ✅ **TODO**: [examples/index.html:8](file:///./examples/index.html#L8): Ajouter les méta-tags pour SEO
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-11-25) | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-11-25) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - 👀 **REVIEW**: [examples/index.html:29](file:///./examples/index.html#L29): Vérifier que le texte est clair et concis
-  🟠 **ÉLEVÉE** | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - ⚙️ **HACK**: [examples/index.html:43](file:///./examples/index.html#L43): Alignement temporaire jusqu'à refactorisation
-  🟠 **ÉLEVÉE** | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
 - ❓ **QUESTION**: [examples/index.html:49](file:///./examples/index.html#L49): Devrions-nous ajouter des icônes pour chaque fonctionnalité?
-  🟠 **ÉLEVÉE** | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - 🚧 **IN PROGRESS**: [examples/index.html:58](file:///./examples/index.html#L58): Section de contact en cours de développement
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-15) | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-15) | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - 🕒 **TEMP**: [examples/index.html:62](file:///./examples/index.html#L62): Formulaire simplifié, à enrichir
-  🟠 **ÉLEVÉE** | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 📅 Created 48 days ago by maelemiel
 
 - ✅ **TODO**: [examples/index.html:71](file:///./examples/index.html#L71): Ajouter les liens de réseaux sociaux
-  🟠 **ÉLEVÉE** | 🚨 **EN RETARD** (2023-12-05) | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-05) | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
-### 🟡 **MOYENNE**
+- 🐛 **BUG**: [tests/test_core.py:49](file:///./tests/test_core.py#L49): Fix bug
+  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
 
-- 💡 **IDEA**: [examples/script.js:47](file:///./examples/script.js#L47): Implémenter un système de thèmes pour l'interface
-  👤 @pierre | 📅 Créé il y a 622 jours par maelemiel
-
-- 💡 **IDEA**: [examples/styles.css:65](file:///./examples/styles.css#L65): Implémenter un mode sombre
-  👤 @pierre | 📅 Créé il y a 617 jours par maelemiel
-
-- 💡 **IDEA**: [examples/index.html:56](file:///./examples/index.html#L56): Ajouter une section témoignages
-  👤 @pierre | 📅 Créé il y a 612 jours par maelemiel
-
-- 💡 **IDEA**: [examples/app.py:52](file:///./examples/app.py#L52): Ajouter une fonctionnalité d'export PDF des rapports
-  👤 @alice | 📅 Créé il y a 606 jours par maelemiel
+### 🟡 **MEDIUM**
 
 - 📝 **NOTE**: [examples/app.py:35](file:///./examples/app.py#L35): Le mot de passe est stocké dans les variables d'environnement
-  📅 Créé il y a 48 jours par maelemiel
+  📅 Created 48 days ago by maelemiel
 
 - ⚡ **OPTIMIZE**: [examples/app.py:40](file:///./examples/app.py#L40): Cette fonction est lente avec de grandes quantités de données
-  🚨 **EN RETARD** (2024-01-15) | 👤 @alice | 📅 Créé il y a 48 jours par maelemiel
+  🚨 **OVERDUE** (2024-01-15) | 👤 @alice | 📅 Created 48 days ago by maelemiel
+
+- 💡 **IDEA**: [examples/app.py:52](file:///./examples/app.py#L52): Ajouter une fonctionnalité d'export PDF des rapports
+  👤 @alice | 📅 Created 606 days ago by maelemiel
 
 - ⚡ **OPTIMIZE**: [examples/script.js:27](file:///./examples/script.js#L27): Réduire le nombre d'appels DOM
-  👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+  👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - 📝 **NOTE**: [examples/script.js:36](file:///./examples/script.js#L36): Les gestionnaires d'événements devraient être déplacés dans un module séparé
-  📅 Créé il y a 48 jours par maelemiel
+  📅 Created 48 days ago by maelemiel
 
-- 📝 **NOTE**: [examples/styles.css:24](file:///./examples/styles.css#L24): Conserver cette marge pour la compatibilité mobile
-  📅 Créé il y a 48 jours par maelemiel
+- 💡 **IDEA**: [examples/script.js:47](file:///./examples/script.js#L47): Implémenter un système de thèmes pour l'interface
+  👤 @pierre | 📅 Created 622 days ago by maelemiel
 
-- ⚡ **OPTIMIZE**: [examples/styles.css:28](file:///./examples/styles.css#L28): Réduire la spécificité CSS
-  🚨 **EN RETARD** (2024-01-15) | 👤 @bob | 📅 Créé il y a 48 jours par maelemiel
+- 📝 **NOTE**: [examples/styles.css:24](file:///./examples/styles.css#L24): Keep this margin for mobile compatibility
+  📅 Created 0 days ago by Not Committed Yet
+
+- ⚡ **OPTIMIZE**: [examples/styles.css:28](file:///./examples/styles.css#L28): Reduce CSS specificity
+  🚨 **OVERDUE** (2024-01-15) | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
+
+- 💡 **IDEA**: [examples/styles.css:65](file:///./examples/styles.css#L65): Implement a dark mode
+  👤 @pierre | 📅 Created 617 days ago by Not Committed Yet
 
 - 📝 **NOTE**: [examples/index.html:17](file:///./examples/index.html#L17): La structure du menu sera révisée dans une prochaine itération
-  📅 Créé il y a 48 jours par maelemiel
+  📅 Created 48 days ago by maelemiel
 
 - ⚡ **OPTIMIZE**: [examples/index.html:35](file:///./examples/index.html#L35): Améliorer la structure des sections pour le SEO
-  🚨 **EN RETARD** (2024-01-10) | 👤 @pierre | 📅 Créé il y a 48 jours par maelemiel
+  🚨 **OVERDUE** (2024-01-10) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
+
+- 💡 **IDEA**: [examples/index.html:56](file:///./examples/index.html#L56): Ajouter une section témoignages
+  👤 @pierre | 📅 Created 612 days ago by maelemiel
+
+### 🟢 **LOW**
 

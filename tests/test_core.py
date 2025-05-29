@@ -6,14 +6,14 @@ import pytest
 from src.core import parse_comment_metadata, clean_comment_text, extract_comments, COMMENT_TYPES
 
 @pytest.mark.parametrize("comment_text,comment_type,expected", [
-    ("Faire ceci @alice P1 DUE:2025-12-31 #42 CREATED:2025-01-01", "TODO", {
+    ("Do this @alice P1 DUE:2025-12-31 #42 CREATED:2025-01-01", "TODO", {
         'assignees': ['alice'],
         'priority': 1,
         'due_date': '2025-12-31',
         'issue': '42',
         'created_match': True
     }),
-    ("Corriger bug @bob P2", "BUG", {
+    ("Fix bug @bob P2", "BUG", {
         'assignees': ['bob'],
         'priority': 2,
         'due_date': None,
@@ -33,20 +33,20 @@ def test_parse_comment_metadata(comment_text, comment_type, expected):
         assert meta['created_match'] is None
 
 def test_clean_comment_text():
-    comment = "Faire ceci @alice P1 DUE:2025-12-31 #42 CREATED:2025-01-01"
+    comment = "Do this @alice P1 DUE:2025-12-31 #42 CREATED:2025-01-01"
     cleaned = clean_comment_text(comment)
     assert "@alice" not in cleaned
     assert "P1" not in cleaned
     assert "DUE:" not in cleaned
     assert "#42" not in cleaned
     assert "CREATED:" not in cleaned
-    assert "Faire ceci" in cleaned
+    assert "Do this" in cleaned
 
 def test_extract_comments(tmp_path):
     file = tmp_path / "test.py"
     file.write_text("""
-# TODO: Faire ceci @alice P1 DUE:2025-12-31 #42 CREATED:2025-01-01
-# BUG: Corriger bug @bob P2
+# TODO: Do this @alice P1 DUE:2025-12-31 #42 CREATED:2025-01-01
+# BUG: Fix bug @bob P2
 """)
     comments = list(extract_comments(str(file), COMMENT_TYPES.keys()))
     assert len(comments) == 2
@@ -56,24 +56,24 @@ def test_extract_comments(tmp_path):
     assert 'bob' in comments[1]['assignees']
 
 def test_parse_comment_metadata_no_meta():
-    comment = "Juste un commentaire simple"
+    comment = "Just a simple comment"
     meta = parse_comment_metadata(comment, "TODO")
     assert meta['assignees'] == []
-    assert meta['priority'] == 2  # priorité par défaut TODO
+    assert meta['priority'] == 2  # default priority for TODO
     assert meta['due_date'] is None
     assert meta['issue'] is None
     assert meta['created_match'] is None
 
 def test_clean_comment_text_no_meta():
-    comment = "Juste un commentaire simple"
+    comment = "Just a simple comment"
     cleaned = clean_comment_text(comment)
-    assert cleaned == "Juste un commentaire simple"
+    assert cleaned == "Just a simple comment"
 
 def test_extract_comments_no_match(tmp_path):
     file = tmp_path / "test2.py"
     file.write_text("""
 print('Hello world')
-# Un commentaire sans tag reconnu
+# A comment without a recognized tag
 """)
     comments = list(extract_comments(str(file), COMMENT_TYPES.keys()))
     assert comments == []
@@ -85,6 +85,6 @@ def test_extract_comments_empty_file(tmp_path):
     assert comments == []
 
 def test_parse_comment_metadata_priority_fallback():
-    comment = "TODO: tâche sans priorité explicite"
+    comment = "TODO: task without explicit priority"
     meta = parse_comment_metadata(comment, "TODO")
-    assert meta['priority'] == 2  # priorité par défaut TODO
+    assert meta['priority'] == 2  # default priority for TODO
