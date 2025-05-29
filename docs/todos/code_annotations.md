@@ -98,10 +98,10 @@ This report lists all annotations found in the source code.
   🟠 **HIGH** | 🚨 **OVERDUE** (2023-11-30) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - [examples/styles.css:4](file:///./examples/styles.css#L4): Standardize the color palette
-  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-10) | 👤 @pierre | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-10) | 👤 @pierre | 📅 Created 0 days ago by maelemiel
 
 - [examples/styles.css:67](file:///./examples/styles.css#L67): Complete dark mode styles
-  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-20) | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-20) | 👤 @alice | 📅 Created 0 days ago by maelemiel
 
 - [examples/index.html:8](file:///./examples/index.html#L8): Ajouter les méta-tags pour SEO
   🟠 **HIGH** | 🚨 **OVERDUE** (2023-11-25) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
@@ -110,7 +110,7 @@ This report lists all annotations found in the source code.
   🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-05) | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
 - [tests/test_core.py:48](file:///./tests/test_core.py#L48): Do this
-  🔴 **CRITICAL** | ⏰ Due in 215 days (2025-12-31) | 👤 @alice | 🔗 #42 | 📅 Created 148 days ago by Not Committed Yet
+  🔴 **CRITICAL** | ⏰ Due in 215 days (2025-12-31) | 👤 @alice | 🔗 #42 | 📅 Created 148 days ago by maelemiel
 
 ## 🚨 Critical issues to fix <a name='fixme' />
 
@@ -121,7 +121,7 @@ This report lists all annotations found in the source code.
   🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-10-30) | 👤 @alice | 🔗 #12 | 📅 Created 48 days ago by maelemiel
 
 - [examples/styles.css:14](file:///./examples/styles.css#L14): Background does not stretch to full height on Safari
-  🔴 **CRITICAL** | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
+  🔴 **CRITICAL** | 👤 @alice | 📅 Created 0 days ago by maelemiel
 
 - [examples/index.html:14](file:///./examples/index.html#L14): Le logo ne s'affiche pas correctement sur mobile
   🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-10-28) | 👤 @alice | 🔗 #23 | 📅 Created 48 days ago by maelemiel
@@ -135,13 +135,13 @@ This report lists all annotations found in the source code.
   🔴 **CRITICAL** | 📅 Created 48 days ago by maelemiel
 
 - [examples/styles.css:42](file:///./examples/styles.css#L42): Animation styles cause stuttering on Chrome
-  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-05) | 📅 Created 0 days ago by Not Committed Yet
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-05) | 📅 Created 0 days ago by maelemiel
 
 - [examples/index.html:31](file:///./examples/index.html#L31): Le bouton ne fonctionne pas sous Firefox
   🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-02) | 📅 Created 48 days ago by maelemiel
 
 - [tests/test_core.py:49](file:///./tests/test_core.py#L49): Fix bug
-  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by maelemiel
 
 ## ⚙️ Temporary solutions <a name='hack' />
 
@@ -152,7 +152,7 @@ This report lists all annotations found in the source code.
   🟠 **HIGH** | 👤 @pierre | 📅 Created 48 days ago by maelemiel
 
 - [examples/styles.css:32](file:///./examples/styles.css#L32): Workaround for vertical alignment
-  🟠 **HIGH** | 👤 @pierre | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 👤 @pierre | 📅 Created 0 days ago by maelemiel
 
 - [examples/index.html:43](file:///./examples/index.html#L43): Alignement temporaire jusqu'à refactorisation
   🟠 **HIGH** | 👤 @alice | 📅 Created 48 days ago by maelemiel
@@ -166,7 +166,7 @@ This report lists all annotations found in the source code.
   📅 Created 48 days ago by maelemiel
 
 - [examples/styles.css:24](file:///./examples/styles.css#L24): Keep this margin for mobile compatibility
-  📅 Created 0 days ago by Not Committed Yet
+  📅 Created 0 days ago by maelemiel
 
 - [examples/index.html:17](file:///./examples/index.html#L17): La structure du menu sera révisée dans une prochaine itération
   📅 Created 48 days ago by maelemiel
@@ -180,7 +180,7 @@ This report lists all annotations found in the source code.
   🟠 **HIGH** | 📅 Created 48 days ago by maelemiel
 
 - [examples/styles.css:70](file:///./examples/styles.css#L70): Temporary styles for the prototype, to be reviewed
-  🟠 **HIGH** | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 📅 Created 0 days ago by maelemiel
 
 - [examples/index.html:62](file:///./examples/index.html#L62): Formulaire simplifié, à enrichir
   🟠 **HIGH** | 📅 Created 48 days ago by maelemiel
@@ -205,7 +205,7 @@ This report lists all annotations found in the source code.
   👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - [examples/styles.css:28](file:///./examples/styles.css#L28): Reduce CSS specificity
-  🚨 **OVERDUE** (2024-01-15) | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
+  🚨 **OVERDUE** (2024-01-15) | 👤 @bob | 📅 Created 0 days ago by maelemiel
 
 - [examples/index.html:35](file:///./examples/index.html#L35): Améliorer la structure des sections pour le SEO
   🚨 **OVERDUE** (2024-01-10) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
@@ -219,7 +219,7 @@ This report lists all annotations found in the source code.
   🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-05) | 👤 @bob | 📅 Created 48 days ago by maelemiel
 
 - [examples/styles.css:52](file:///./examples/styles.css#L52): Evaluate if we need these grid styles
-  🟠 **HIGH** | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 👤 @alice | 📅 Created 0 days ago by maelemiel
 
 - [examples/index.html:29](file:///./examples/index.html#L29): Vérifier que le texte est clair et concis
   🟠 **HIGH** | 👤 @bob | 📅 Created 48 days ago by maelemiel
@@ -233,7 +233,7 @@ This report lists all annotations found in the source code.
   🟠 **HIGH** | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
 - [examples/styles.css:59](file:///./examples/styles.css#L59): Should we support IE11?
-  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by maelemiel
 
 - [examples/index.html:49](file:///./examples/index.html#L49): Devrions-nous ajouter des icônes pour chaque fonctionnalité?
   🟠 **HIGH** | 👤 @bob | 📅 Created 48 days ago by maelemiel
@@ -247,7 +247,7 @@ This report lists all annotations found in the source code.
   👤 @pierre | 📅 Created 622 days ago by maelemiel
 
 - [examples/styles.css:65](file:///./examples/styles.css#L65): Implement a dark mode
-  👤 @pierre | 📅 Created 617 days ago by Not Committed Yet
+  👤 @pierre | 📅 Created 617 days ago by maelemiel
 
 - [examples/index.html:56](file:///./examples/index.html#L56): Ajouter une section témoignages
   👤 @pierre | 📅 Created 612 days ago by maelemiel
@@ -269,10 +269,10 @@ This report lists all annotations found in the source code.
   🔴 **CRITICAL** | 📅 Created 48 days ago by maelemiel
 
 - 🚨 **FIXME**: [examples/styles.css:14](file:///./examples/styles.css#L14): Background does not stretch to full height on Safari
-  🔴 **CRITICAL** | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
+  🔴 **CRITICAL** | 👤 @alice | 📅 Created 0 days ago by maelemiel
 
 - 🐛 **BUG**: [examples/styles.css:42](file:///./examples/styles.css#L42): Animation styles cause stuttering on Chrome
-  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-05) | 📅 Created 0 days ago by Not Committed Yet
+  🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-05) | 📅 Created 0 days ago by maelemiel
 
 - 🚨 **FIXME**: [examples/index.html:14](file:///./examples/index.html#L14): Le logo ne s'affiche pas correctement sur mobile
   🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-10-28) | 👤 @alice | 🔗 #23 | 📅 Created 48 days ago by maelemiel
@@ -281,7 +281,7 @@ This report lists all annotations found in the source code.
   🔴 **CRITICAL** | 🚨 **OVERDUE** (2023-11-02) | 📅 Created 48 days ago by maelemiel
 
 - ✅ **TODO**: [tests/test_core.py:48](file:///./tests/test_core.py#L48): Do this
-  🔴 **CRITICAL** | ⏰ Due in 215 days (2025-12-31) | 👤 @alice | 🔗 #42 | 📅 Created 148 days ago by Not Committed Yet
+  🔴 **CRITICAL** | ⏰ Due in 215 days (2025-12-31) | 👤 @alice | 🔗 #42 | 📅 Created 148 days ago by maelemiel
 
 ### 🟠 **HIGH**
 
@@ -325,22 +325,22 @@ This report lists all annotations found in the source code.
   🟠 **HIGH** | 📅 Created 48 days ago by maelemiel
 
 - ✅ **TODO**: [examples/styles.css:4](file:///./examples/styles.css#L4): Standardize the color palette
-  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-10) | 👤 @pierre | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-10) | 👤 @pierre | 📅 Created 0 days ago by maelemiel
 
 - ⚙️ **HACK**: [examples/styles.css:32](file:///./examples/styles.css#L32): Workaround for vertical alignment
-  🟠 **HIGH** | 👤 @pierre | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 👤 @pierre | 📅 Created 0 days ago by maelemiel
 
 - 👀 **REVIEW**: [examples/styles.css:52](file:///./examples/styles.css#L52): Evaluate if we need these grid styles
-  🟠 **HIGH** | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 👤 @alice | 📅 Created 0 days ago by maelemiel
 
 - ❓ **QUESTION**: [examples/styles.css:59](file:///./examples/styles.css#L59): Should we support IE11?
-  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by maelemiel
 
 - ✅ **TODO**: [examples/styles.css:67](file:///./examples/styles.css#L67): Complete dark mode styles
-  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-20) | 👤 @alice | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-20) | 👤 @alice | 📅 Created 0 days ago by maelemiel
 
 - 🕒 **TEMP**: [examples/styles.css:70](file:///./examples/styles.css#L70): Temporary styles for the prototype, to be reviewed
-  🟠 **HIGH** | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 📅 Created 0 days ago by maelemiel
 
 - ✅ **TODO**: [examples/index.html:8](file:///./examples/index.html#L8): Ajouter les méta-tags pour SEO
   🟠 **HIGH** | 🚨 **OVERDUE** (2023-11-25) | 👤 @pierre | 📅 Created 48 days ago by maelemiel
@@ -364,7 +364,7 @@ This report lists all annotations found in the source code.
   🟠 **HIGH** | 🚨 **OVERDUE** (2023-12-05) | 👤 @alice | 📅 Created 48 days ago by maelemiel
 
 - 🐛 **BUG**: [tests/test_core.py:49](file:///./tests/test_core.py#L49): Fix bug
-  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
+  🟠 **HIGH** | 👤 @bob | 📅 Created 0 days ago by maelemiel
 
 ### 🟡 **MEDIUM**
 
@@ -387,13 +387,13 @@ This report lists all annotations found in the source code.
   👤 @pierre | 📅 Created 622 days ago by maelemiel
 
 - 📝 **NOTE**: [examples/styles.css:24](file:///./examples/styles.css#L24): Keep this margin for mobile compatibility
-  📅 Created 0 days ago by Not Committed Yet
+  📅 Created 0 days ago by maelemiel
 
 - ⚡ **OPTIMIZE**: [examples/styles.css:28](file:///./examples/styles.css#L28): Reduce CSS specificity
-  🚨 **OVERDUE** (2024-01-15) | 👤 @bob | 📅 Created 0 days ago by Not Committed Yet
+  🚨 **OVERDUE** (2024-01-15) | 👤 @bob | 📅 Created 0 days ago by maelemiel
 
 - 💡 **IDEA**: [examples/styles.css:65](file:///./examples/styles.css#L65): Implement a dark mode
-  👤 @pierre | 📅 Created 617 days ago by Not Committed Yet
+  👤 @pierre | 📅 Created 617 days ago by maelemiel
 
 - 📝 **NOTE**: [examples/index.html:17](file:///./examples/index.html#L17): La structure du menu sera révisée dans une prochaine itération
   📅 Created 48 days ago by maelemiel

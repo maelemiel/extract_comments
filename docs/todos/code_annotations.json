@@ -345,7 +345,7 @@
         "due_date": "2023-12-10",
         "issue": null,
         "created": "2025-05-29",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "FIXME",
@@ -360,7 +360,7 @@
         "due_date": null,
         "issue": null,
         "created": "2025-05-29",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "NOTE",
@@ -373,7 +373,7 @@
         "due_date": null,
         "issue": null,
         "created": "2025-05-29",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "OPTIMIZE",
@@ -388,7 +388,7 @@
         "due_date": "2024-01-15",
         "issue": null,
         "created": "2025-05-29",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "HACK",
@@ -403,7 +403,7 @@
         "due_date": null,
         "issue": null,
         "created": "2025-05-29",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "BUG",
@@ -416,7 +416,7 @@
         "due_date": "2023-11-05",
         "issue": null,
         "created": "2025-05-29",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "REVIEW",
@@ -431,7 +431,7 @@
         "due_date": null,
         "issue": null,
         "created": "2025-05-29",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "QUESTION",
@@ -446,7 +446,7 @@
         "due_date": null,
         "issue": null,
         "created": "2025-05-29",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "IDEA",
@@ -461,7 +461,7 @@
         "due_date": null,
         "issue": null,
         "created": "2023-09-20",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "TODO",
@@ -476,7 +476,7 @@
         "due_date": "2023-12-20",
         "issue": null,
         "created": "2025-05-29",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "TEMP",
@@ -489,7 +489,7 @@
         "due_date": null,
         "issue": null,
         "created": "2025-05-29",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "TODO",
@@ -678,7 +678,7 @@
         "due_date": "2025-12-31",
         "issue": "42",
         "created": "2025-01-01",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     },
     {
         "type": "BUG",
@@ -693,6 +693,6 @@
         "due_date": null,
         "issue": null,
         "created": "2025-05-29",
-        "author": "Not Committed Yet"
+        "author": "maelemiel"
     }
 ]
