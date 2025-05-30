@@ -32,7 +32,8 @@ jobs:
 
     - name: Extract comments
       run: |
-        python ./scripts/extract_comments.py \
+        make
+        extract_comments \
           --directory . \
           --output docs/todos/code_annotations.md \
           --json-output docs/todos/code_annotations.json \

@@ -175,3 +175,4 @@ cython_debug/
 
 
 examples/
+extract_comments

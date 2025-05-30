@@ -2,25 +2,28 @@
 
 A powerful tool to extract, analyze, and visualize annotations in your source code.
 
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Python](https://img.shields.io/badge/python-%3E%3D3.6-green)
 ![License](https://img.shields.io/badge/license-MIT-orange)
+
+---
 
 ## 📝 Description
 
-`extract_comments` is a command-line tool that scans your codebase to extract special comments (TODO, FIXME, BUG, etc.) and generates a detailed Markdown report. It helps you keep track of all your tasks and issues directly from your source code.
+`extract_comments` is a command-line tool that scans your code to extract special comments (TODO, FIXME, BUG, etc.) and generates detailed Markdown reports, interactive HTML dashboards, and JSON exports. It helps you track all your tasks and issues directly from your codebase.
 
-![Example](https://github.com/maelemiel/extract_comments/blob/main/examples/rapport.md)
+---
 
-## ✨ Features
+## ✨ Main Features
 
-- **Smart extraction** - Scans code files for important annotations
-- **Rich metadata** - Support for assignees, priorities, due dates, and GitHub issue links
-- **Beautiful visualization** - Generates Markdown reports with visual charts
-- **Multiple formats** - Simplified, detailed reports and JSON data for integration
-- **Highly configurable** - Filter by extension, exclude directories
-- **Git integration** - Automatically detects authors and creation dates
+- **Smart extraction**: Detects all important annotation types
+- **Rich metadata**: Assignees, priorities, due dates, GitHub links
+- **Interactive HTML dashboard**: Modern, filterable visualization
+- **Multi-branch reports**: Automatically generates a report for each Git branch
+- **Flexible configuration**: Via YAML/JSON config file or CLI options
+- **Folder exclusion**: Easily ignore decorative or bulky folders
+- **PyInstaller compatibility**: Works as a standalone binary
+- **CI/CD integration**: Ready-to-use GitHub Actions workflow
+
+---
 
 ## 🚀 Installation
 
@@ -29,204 +32,192 @@ No external dependencies required. Simply clone this repository:
 ```bash
 git clone https://github.com/maelemiel/extract_comments.git
 cd extract_comments
-chmod +x extract_comments.py
 ```
+
+To generate an executable:
+
+```bash
+make
+```
+
+---
 
 ## 📊 Supported Annotation Types
 
-| Type | Emoji | Description | Default Priority |
-|------|-------|-------------|---------------------|
-| TODO | ✅ | Tasks to be done	 | 2 |
-| FIXME | 🚨 | Critical issues to fix	 | 1 |
-| BUG | 🐛 | Known bugs	 | 1 |
-| HACK | ⚙️ | Temporary solutions	 | 2 |
-| NOTE | 📝 | Important notes	 | 3 |
-| TEMP | 🕒 | Temporary code	 | 2 |
-| IN PROGRESS | 🚧 | Work in progress	 | 2 |
-| OPTIMIZE | ⚡ | Optimizations needed	 | 3 |
-| REVIEW | 👀 | Code to review	 | 2 |
-| QUESTION | ❓ | Questions to clarify	 | 2 |
-| IDEA | 💡 | Ideas to explore	 | 3 |
+| Type         | Emoji | Description                  | Default Priority |
+|--------------|-------|------------------------------|-----------------|
+| TODO         | ✅    | Tasks to do                  | 2               |
+| FIXME        | 🚨    | Critical issues to fix       | 1               |
+| BUG          | 🐛    | Known bugs                   | 1               |
+| HACK         | ⚙️    | Temporary solutions          | 2               |
+| NOTE         | 📝    | Important notes              | 3               |
+| TEMP         | 🕒    | Temporary code               | 2               |
+| IN PROGRESS  | 🚧    | In progress                  | 2               |
+| OPTIMIZE     | ⚡    | Optimizations to make        | 3               |
+| REVIEW       | 👀    | Code to review               | 2               |
+| QUESTION     | ❓    | Questions to clarify         | 2               |
+| IDEA         | 💡    | Ideas to explore             | 3               |
 
-## 🛠️ Usage
+---
+
+## 🛠️ Quick Usage
 
 ### Basic Command
 
 ```bash
-./extract_comments.py --directory /path/to/your/project
+./extract_comments --directory /path/to/project
 ```
 
-### Available Options
+### Main Options
 
 ```
-usage: extract_comments.py [-h] [--directory DIRECTORY] [--output OUTPUT] [--json-output JSON_OUTPUT]
-                           [--extensions EXTENSIONS [EXTENSIONS ...]] [--repo-url REPO_URL]
-                           [--exclude EXCLUDE [EXCLUDE ...]] [--simple]
-
-Extract and analyze code annotations
+usage: extract_comments [-h] [--directory DIRECTORY] [--output OUTPUT] [--json-output JSON_OUTPUT]
+                          [--extensions EXTENSIONS ...] [--repo-url REPO_URL]
+                          [--exclude EXCLUDE ...] [--simple] [--per-branch] [--config CONFIG]
 
 options:
-  -h, --help            show this help message and exit
-  --directory DIRECTORY, -d DIRECTORY
-                        Directory to scan (default: current directory)
-  --output OUTPUT, -o OUTPUT
-                        Output Markdown file (default: docs/todos/code_annotations.md)
-  --json-output JSON_OUTPUT, -j JSON_OUTPUT
-                        Output JSON file (default: docs/todos/code_annotations.json)
-  --extensions EXTENSIONS [EXTENSIONS ...], -e EXTENSIONS [EXTENSIONS ...]
-                        File extensions to scan (default: common code extensions)
-  --repo-url REPO_URL, -r REPO_URL
-                        GitHub repository URL (e.g., https://github.com/username/repo)
-  --exclude EXCLUDE [EXCLUDE ...], -x EXCLUDE [EXCLUDE ...]
-                        Directories to exclude
-  --simple, -s          Generate a simplified, prettier report
+  -h, --help            Show help message
+  --directory, -d       Directory to scan (default: current directory)
+  --output, -o          Output Markdown file
+  --json-output, -j     Output JSON file
+  --extensions, -e      File extensions to scan
+  --repo-url, -r        GitHub repository URL (for links)
+  --exclude, -x         Folders to exclude
+  --simple, -s          Generate a simplified report/dashboard
+  --per-branch          Generate a report for each Git branch
+  --config, -c          YAML or JSON configuration file
 ```
 
-### Examples
+### Usage Examples
 
-#### Scan a project with a simplified report:
+- **Simplified report on a project:**
 
 ```bash
-./extract_comments.py -d /home/user/projects/myapp -s
+./extract_comments -d ./myproject -s
 ```
 
-#### Specify specific file extensions:
+- **Multi-branch report with HTML dashboard:**
 
 ```bash
-./extract_comments.py -d /home/user/projects/myapp -e .js .ts .py
+./extract_comments -d ./myproject --per-branch --simple
 ```
 
-#### Exclude certain directories:
+- **Using a configuration file:**
 
 ```bash
-./extract_comments.py -d /home/user/projects/myapp -x node_modules tests vendor
+./extract_comments -c config.yaml
 ```
 
-#### Enable GitHub links:
+- **Exclude decorative folders:**
 
 ```bash
-./extract_comments.py -d /home/user/projects/myapp -r https://github.com/username/myapp
+./extract_comments -d ./myproject -x node_modules tests examples
 ```
 
-## 📌 Annotating Your Code
+- **From a PyInstaller executable:**
 
-To ensure your comments are detected, follow these conventions:
+```bash
+./dist/extract_comments --config config.yaml
+```
 
-### Basic Syntax
+---
+
+## ⚙️ Advanced Configuration
+
+You can define all options in a `config.yaml` or `config.json` file:
+
+```yaml
+directory: ./myproject
+output: ./docs/annotations.md
+json_output: ./docs/annotations.json
+exclude:
+  - node_modules
+  - tests
+  - examples
+repo_url: https://github.com/username/myproject
+simple: true
+per_branch: true
+```
+
+CLI options override those in the config file.
+
+---
+
+## 📌 How to Annotate Your Code
+
+- **Basic syntax:**
 
 ```python
 # TODO: Implement form validation
 ```
 
 ```javascript
-// FIXME: Fix image loading issue
+// FIXME: Fix image loading
 ```
 
-```html
-<!-- NOTE: Add class for responsive design -->
-```
-
-### Add Metadata
-
-You can enrich your annotations with metadata:
+- **Add metadata:**
 
 ```python
-# TODO: Optimize search algorithm @john P2 DUE:2023-12-31 #42
+# TODO: Optimize search @alice P1 DUE:2025-12-31 #42
 ```
 
-#### Supported Metadata:
+- **Supported metadata:**
+  - `@username`: assignee
+  - `P1`, `P2`, ...: priority
+  - `DUE:YYYY-MM-DD`: due date
+  - `#123`: GitHub issue
+  - `CREATED:YYYY-MM-DD`: creation date
 
-- **Assignee**: `@username` - Person responsible
-- **Priority**: `P1`, `P2`, `P3`, `P4` (1 is highest)
-- **Due Date**: `DUE:YYYY-MM-DD` - Deadline
-- **GitHub Issue**: `#123` - Reference to an issue
-- **Created Date**: `CREATED:YYYY-MM-DD` - Manual creation date
-
-If no priority is set, a default priority is applied based on the annotation type.
+---
 
 ## 📂 Output Formats
 
-### Simplified Report (-s option)
+- **Simplified Markdown**: visual dashboard, urgent list, charts
+- **Detailed Markdown**: statistics, grouped by type/priority, full metadata
+- **JSON**: structured data for integration
+- **HTML**: interactive dashboard (filtering, search, stats)
 
-A visual dashboard showing:
-- Annotation summary
-- Priority and type charts
-- Urgent task list
-- Visual progress indicators
+---
 
-### Detailed Report
+## 🖥️ Interactive HTML Dashboard
 
-A full documentation including:
-- Table of contents
-- Detailed statistics
-- Annotations grouped by type and priority
-- Full metadata for each annotation
+After extraction, a modern HTML dashboard is generated (filterable, interactive, ready to integrate into your docs or CI/CD).
 
-### JSON Data
+---
 
-Structured data for integration with other tools:
+## 🔄 GitHub Actions Integration (CI/CD)
 
-```json
-[
-  {
-    "type": "TODO",
-    "text": "Implement validation",
-    "file": "src/form.js",
-    "line": 42,
-    "assignees": ["john"],
-    "priority": 2,
-    "due_date": "2023-12-31",
-    "issue": "42",
-    "created": "2023-10-15",
-    "author": "jane"
-  }
-]
-```
-
-## 🔄 GitHub Actions Integration
-
-You can automate annotation extraction using GitHub Actions. An example workflow is included in this repository.
-
-### Workflow Configuration
-
-Create a file `.github/workflows/extract-comments.yml` in your repository:
+Automate extraction with the provided workflow:
 
 ```yaml
 name: Extract Code Annotations
-
 on:
   push:
     branches: [ main, dev ]
   pull_request:
     branches: [ main, dev ]
   schedule:
-    - cron: '0 9 * * 1' # Every Monday at 9 AM
-  workflow_dispatch:
-
+    - cron: '0 9 * * 1'
 jobs:
   extract-comments:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
       with:
-        fetch-depth: 0  # Required for git blame
-
+        fetch-depth: 0
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.x'
-
     - name: Extract comments
       run: |
-        python ./extract_comments.py \
+        python ./extract_comments \
           --directory . \
           --output docs/todos/code_annotations.md \
           --json-output docs/todos/code_annotations.json \
           --repo-url https://github.com/${{ github.repository }} \
           --simple \
           --exclude node_modules .git dist build
-
     - name: Commit changes
       run: |
         git config --global user.name 'GitHub Actions'
@@ -236,32 +227,18 @@ jobs:
         git push
 ```
 
-### Benefits of Automation
-
-- **Always up-to-date reports**: Auto-generated after every push or on schedule
-- **Living documentation**: Team always has access to the latest annotations
-- **Task history**: Track annotation evolution over time
-- **Team visibility**: Easily integrate reports into your project docs
-
-### Workflow Customization
-
-Vous pouvez personnaliser le workflow en modifiant:
-
-- **Triggers**: Change monitored branches or schedule
-- **Output directory**: Define where reports are saved
-- **Exclusion options**: Adjust which folders are ignored
-- **Report format**: Choose between simplified or detailed
-
-This integration is especially useful for teams using annotations as a communication and task-tracking method within the code.
-
-## 🔧 Customization
-
-To customize annotation types and their default priorities, edit the `COMMENT_TYPES` section at the top of the script.
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+Contributions are welcome! Open an issue or a pull request.
+
+---
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+Project under the MIT license. See the LICENSE file.
+
+---
+
+> For any questions or suggestions, contact [@maelemiel](https://github.com/maelemiel).
