@@ -174,4 +174,4 @@ cython_debug/
 .pypirc
 
 
-examples/examples/
+examples/
