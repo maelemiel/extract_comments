@@ -1,0 +1,32 @@
+[
+    {
+        "type": "TODO",
+        "text": "Do this",
+        "full_text": "Do this @alice P1 DUE:2025-12-31 #42 CREATED:2025-01-01",
+        "file": "./tests/test_core.py",
+        "line": 48,
+        "assignees": [
+            "alice"
+        ],
+        "priority": 1,
+        "due_date": "2025-12-31",
+        "issue": "42",
+        "created": "2025-01-01",
+        "author": "maelemiel"
+    },
+    {
+        "type": "BUG",
+        "text": "Fix bug",
+        "full_text": "Fix bug @bob P2",
+        "file": "./tests/test_core.py",
+        "line": 49,
+        "assignees": [
+            "bob"
+        ],
+        "priority": 2,
+        "due_date": null,
+        "issue": null,
+        "created": "2025-05-29",
+        "author": "maelemiel"
+    }
+]

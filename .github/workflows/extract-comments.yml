@@ -11,6 +11,9 @@ on:
   # Permet aussi de lancer manuellement
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   extract-comments:
     runs-on: ubuntu-latest
@@ -19,6 +22,7 @@ jobs:
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0  # Nécessaire pour git blame
+        persist-credentials: true
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -28,11 +32,12 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install python-dateutil
+        pip install python-dateutil pyinstaller
 
     - name: Extract comments
       run: |
-        python ./scripts/extract_comments.py \
+        make
+        ./extract_comments \
           --directory . \
           --output docs/todos/code_annotations.md \
           --json-output docs/todos/code_annotations.json \
@@ -40,9 +45,10 @@ jobs:
           --exclude node_modules .git dist build
 
     - name: Commit changes
+      if: github.event_name != 'pull_request'
       run: |
         git config --global user.name 'GitHub Actions'
         git config --global user.email 'actions@github.com'
-        git add docs/todos/code_annotations.md docs/todos/code_annotations.json
+        git add docs/todos/code_annotations.md docs/todos/code_annotations.json docs/todos/code_annotations_dashboard.html
         git diff --quiet && git diff --staged --quiet || git commit -m "Update code annotations report"
-        git push
+        git push origin HEAD:"${GITHUB_REF#refs/heads/}"
