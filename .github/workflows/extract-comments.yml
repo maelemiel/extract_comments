@@ -33,7 +33,7 @@ jobs:
     - name: Extract comments
       run: |
         make
-        extract_comments \
+        ./extract_comments \
           --directory . \
           --output docs/todos/code_annotations.md \
           --json-output docs/todos/code_annotations.json \
