@@ -1,0 +1,10 @@
+{
+  "directory": "./examples",
+  "output": "./examples/rapport.md",
+  "json_output": "./examples/rapport.json",
+  "extensions": [".py", ".js", ".html", ".css"],
+  "repo_url": "https://github.com/maelemiel/extract_comments",
+  "exclude": ["node_modules", ".git", "dist", "build"],
+  "simple": true,
+  "per_branch": false
+}
