@@ -189,43 +189,7 @@ After extraction, a modern HTML dashboard is generated (filterable, interactive,
 
 Automate extraction with the provided workflow:
 
-```yaml
-name: Extract Code Annotations
-on:
-  push:
-    branches: [ main, dev ]
-  pull_request:
-    branches: [ main, dev ]
-  schedule:
-    - cron: '0 9 * * 1'
-jobs:
-  extract-comments:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-    - name: Extract comments
-      run: |
-        python ./extract_comments \
-          --directory . \
-          --output docs/todos/code_annotations.md \
-          --json-output docs/todos/code_annotations.json \
-          --repo-url https://github.com/${{ github.repository }} \
-          --simple \
-          --exclude node_modules .git dist build
-    - name: Commit changes
-      run: |
-        git config --global user.name 'GitHub Actions'
-        git config --global user.email 'actions@github.com'
-        git add docs/todos/code_annotations.md docs/todos/code_annotations.json docs/todos/code_annotations_detailed.md
-        git diff --quiet && git diff --staged --quiet || git commit -m "Update code annotations report"
-        git push
-```
+[extract-comments.yml](https://github.com/maelemiel/extract_comments/blob/main/.github/workflows/extract-comments.yml)
 
 ---
 
