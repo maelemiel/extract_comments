@@ -39,6 +39,8 @@ def generate_html_dashboard(json_path, output_path, branch=None):
         .prio2 {{ background: #f39c12; color: #fff; }}
         .prio3 {{ background: #f1c40f; color: #222; }}
         .prio4 {{ background: #2ecc71; color: #fff; }}
+        ul.stats-list {{ margin: 0 0 0 1em; padding: 0; }}
+        ul.stats-list li {{ list-style: disc; margin-left: 1em; }}
     </style>
 </head>
 <body>
@@ -46,10 +48,22 @@ def generate_html_dashboard(json_path, output_path, branch=None):
     {branch_title}
     <div class='stats'>
         <b>Total annotations :</b> {total}<br>
-        <b>By type :</b> {dict(by_type)}<br>
-        <b>By priority :</b> {dict(by_priority)}<br>
-        <b>By author :</b> {dict(by_author)}<br>
-        <b>By assignee :</b> {dict(by_assignee)}<br>
+        <b>By type :</b>
+        <ul class='stats-list'>
+            {''.join(f'<li><b>{k}</b> : {v}</li>' for k, v in by_type.items())}
+        </ul>
+        <b>By priority :</b>
+        <ul class='stats-list'>
+            {''.join(f'<li><b>P{k}</b> : {v}</li>' for k, v in by_priority.items())}
+        </ul>
+        <b>By author :</b>
+        <ul class='stats-list'>
+            {''.join(f'<li><b>{k}</b> : {v}</li>' for k, v in by_author.items())}
+        </ul>
+        <b>By assignee :</b>
+        <ul class='stats-list'>
+            {''.join(f'<li><b>{k}</b> : {v}</li>' for k, v in by_assignee.items())}
+        </ul>
     </div>
     <div class='filters'>
         <label>Type: <select id='typeFilter'><option value=''>All</option></select></label>
@@ -72,10 +86,10 @@ def generate_html_dashboard(json_path, output_path, branch=None):
     const assigneeSet = new Set(data.flatMap(c => c.assignees || []));
     const authorSet = new Set(data.map(c => c.author || 'Unknown'));
     // Remplir les filtres
-    for (const t of typeSet) document.getElementById('typeFilter').innerHTML += `<option>${t}</option>`;
-    for (const p of prioSet) document.getElementById('prioFilter').innerHTML += `<option>${p}</option>`;
-    for (const a of assigneeSet) document.getElementById('assigneeFilter').innerHTML += `<option>${a}</option>`;
-    for (const a of authorSet) document.getElementById('authorFilter').innerHTML += `<option>${a}</option>`;
+    for (const t of typeSet) document.getElementById('typeFilter').innerHTML += `<option>${{t}}</option>`;
+    for (const p of prioSet) document.getElementById('prioFilter').innerHTML += `<option>${{p}}</option>`;
+    for (const a of assigneeSet) document.getElementById('assigneeFilter').innerHTML += `<option>${{a}}</option>`;
+    for (const a of authorSet) document.getElementById('authorFilter').innerHTML += `<option>${{a}}</option>`;
     function renderTable() {{
         const type = document.getElementById('typeFilter').value;
         const prio = document.getElementById('prioFilter').value;
